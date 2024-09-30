@@ -1,0 +1,20 @@
+title: Računalniški praktikum
+author: Katja Berčič, Matija Pretnar
+copyright: "2024"
+repository:
+  url: 'https://github.com/katjabercic/racunalniski-praktikum'
+
+# sphinx:
+#   extra_extensions:
+#     - sphinx_proof
+#   local_extensions:
+#     semantic: 'extensions/'
+
+# semantic:
+#   # This can be any URI identifying your course; need not be an actual URL
+#   namespace: https://Nicolas.Thiery.name/Enseignement/Info111
+#   # This is were you can insert alignments for the terminology of your course
+#   symdecls:
+#     - verbalization: informatique
+#       en: computer science
+#       mathhub: '[smglom/cs]mod?computer-science?CS'

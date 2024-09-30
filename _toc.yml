@@ -1,0 +1,16 @@
+format: jb-book
+root: 00-uvod.md
+parts:
+- caption: Osnovne veščine
+  chapters:
+  - file: 01-vscode-in-terminal.md
+  - file: 02-git-in-markdown.md
+  - file: 03-html.md
+- caption: Plonkci in ostali dodatki
+  chapters:
+  - file: A-programska-oprema.md
+  - file: B-tipkovnica.md
+  - file: C-ukazna-vrstica.md
+  - file: E-posta.md
+  - file: F-pogosta-vprasanja.md
+  - file: G-git.md

@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 6c35bbbc-c037-45b2-9f31-653c1eff196f
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/katjabercic/racunalniski-praktikum
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png

@@ -1,0 +1,31 @@
+format: jb-book
+root: 00-uvod.md
+parts:
+- caption: Osnovne veščine
+  chapters:
+  - file: 01-vscode-in-terminal.md
+  - file: 02-git-in-markdown.md
+  - file: 03-html.md
+  - file: 04-css.md
+  - file: 05-splet-in-se-kaj.md
+- caption: Matematični dokumenti
+  chapters:
+  - file: 06-uvod-v-latex.md
+  - file: 07-okolja-in-sklicevanje.md
+  - file: 08-predstavitve.md
+  - file: 09-risanje.md
+- caption: Računanje
+  chapters:
+  - file: 10-razpredelnice.md
+  - file: 11-uvod-v-mathematico.md
+  - file: 12-simbolno-računanje.md
+  - file: 13-risanje.md
+  - file: 14-naprednejsa-matematika.md
+- caption: Plonkci in ostali dodatki
+  chapters:
+  - file: A-programska-oprema.md
+  - file: B-tipkovnica.md
+  - file: C-ukazna-vrstica.md
+  - file: E-posta.md
+  - file: F-pogosta-vprasanja.md
+  - file: G-git.md

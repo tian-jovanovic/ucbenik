@@ -1,0 +1,6 @@
+# Regularni izrazi
+
+- capture group
+- `?`
+- `*`
+- `[|]`
