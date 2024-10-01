@@ -29,9 +29,9 @@ V besedilu bomo uporabljali vnaprej določena zaporedja znakov, ki bodo imela po
 
 ## 1. naloga: pripravite README datoteko za svoj repozitorij
 
-`````{admonition} Primer navadnega besedila
+`````{admonition} Del domače naloge
 :class: attention
-    Datoteko, ki jo boste pripravili, boste potrebovali za domačo nalogo.
+Datoteko, ki jo boste pripravili, boste potrebovali za domačo nalogo.
 `````
 
 ### 1. 1. Pripravite se za delo
@@ -171,17 +171,16 @@ Sledite navodilom za [nastavitve `git`-a](git:nastavitve).
 
 ## 3. naloga: Git zgodba
 
-Pojdite na repozitorij [rp-git-zgodba](https://github.com/katjabercic/rp-git-zgodba/) in sledite navodilom.
-
-Bodite pozorni na to, kam boste klonirali repozitorij.
-Priporočamo, da v isti imenik, v katerega ste že klonirali svoj prvi repozitorij.
-
 `````{admonition} Nastavitve uporabnika
 :class: attention
 Če še niste [uredili nastavitev uporabnika za Git](git:nastavitve-uporabnika), to naredite zdaj.
 Če pridete do prvega _commita_ preden uredite nastavitve, vam bo Git prijazno povedal, da morate to narediti. 
 V tem primeru sledite navodilom, ki se izpišejo, na koncu pa morate še enkrat pognati `git commit -m "⟨sporočilo⟩"`
 `````
+
+Pojdite na repozitorij [rp-git-zgodba](https://github.com/katjabercic/rp-git-zgodba/) in sledite navodilom.
+Bodite pozorni na to, kam boste klonirali repozitorij.
+Priporočamo, da v isti imenik, v katerega ste že klonirali svoj prvi repozitorij.
 
 ### Urejanje datotek iz ukazne vrstice
 
@@ -209,12 +208,13 @@ touch ⟨ime-datoteke⟩
 ## Domača naloga
 
 1. [Napravite končnice in skrite datoteke vidne na domačem računalniku](faq:koncnice-skrite).
-2. V svoj prvi repozitorij (ki ste ga klonirali v 2. nalogi) shranite README datoteko, 
+2. V svoj prvi repozitorij (ki ste ga klonirali v 2. nalogi) shranite datoteko `README.md`, 
    ki ste jo pripravili v 1. nalogi: potrebovali boste ukaza `add` in `commit`.
    Sporočilo commita (tisto med dvojnimi narekovaji) naj vsebuje besedilo `2. domača naloga`,
    sicer ne boste dobili točke.
 3. Shranite spremembe, ki ste jih ravnokar naredili, še na GitHub: `git push origin main` oz. 
-   `git push origin master`. (Eno od `main` in `master` je ime vaše glavne veje. 
+   `git push origin master`. 
+   (Ime vaše glavne veje je `main` ali `master`. 
    Katero je pravo, lahko preverite z ukazom `git branch`).
 4. Če se še niste, se na [učilnici](http://ucilnica.fmf.uni-lj.si/) prijavite k predmetom, ki jih obiskujete.
 5. Preko [ID portala](https://id.uni-lj.si/) Univerze v Ljubljani se prijavite v spletni vmesnik za elektronsko pošto in pošljite mail kateremu od svojih sošolcev. 
@@ -223,8 +223,9 @@ touch ⟨ime-datoteke⟩
    študenske e-pošte nanjo, saj boste na študentski naslov prejemali tudi pomembna obvestila
    o študiju. Sami ugotovite, kako se to naredi, ali pa vprašajte.
 
-Točka za domačo nalogo se vam bo upoštevala, če bo v vašem repozitoriju (na glavni oz. privzeti veji)
-sprememba (oz. _commit_) s sporočilom, ki vsebuje `2. domača naloga`. 
+Točka za domačo nalogo se vam bo upoštevala, 
+če bo v vašem repozitoriju (na glavni oz. privzeti veji)
+sprememba (oz. _commit_) datoteke `README.md` s sporočilom, ki vsebuje besedilo `2. domača naloga`. 
 Sprememba mora imeti čas med
 ponedeljkom,  7. oktobra 2024, ob 00:00 in
 ponedeljkom, 28. oktobra 2024, ob 23:55.
