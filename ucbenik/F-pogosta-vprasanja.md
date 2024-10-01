@@ -67,7 +67,7 @@ Na operacijskem sistemu Windows v programu Explorer (Raziskovalec) desno kliknet
 
 Odprite okno z ukazno vrstico (**Terminal** > **New Terminal**).
 V spodnjem desnem delu VSCode okna bi se vam moral odpreti nov razdelek z ukazno vrstico. 
-Znotraj tega razdelka desno zgoraj poiščite ikone za dejanja. 
+Znotraj tega razdelka desno zgoraj poiščite ikone za opravila. 
 Če pred ikonami piše `bash`, je to to. Če piše `powershell`, poiščite gumb + in **kliknite na puščico navzdol ki se dotika gumba +**.
 Izberite možnost "Select default profile".
 Čisto na vrhu VSCode okna bi se moral odpreti meni, v katerem so naštete možnosti za ukazno vrstico.

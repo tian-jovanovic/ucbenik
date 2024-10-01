@@ -1,6 +1,7 @@
 # Označevalni jezik HTML
 
-HTML, **HyperText Markup Language** (jezik za označevanje hiperteksta oz. nadbesedila), je osnovni jezik za ustvarjanje spletnih strani in spletnih aplikacij.
+HTML (angl. _**H**yper**T**ext **M**arkup **L**anguage** _, jezik za označevanje hiperteksta oz. nadbesedila), 
+je osnovni jezik za ustvarjanje spletnih strani in spletnih aplikacij.
 Spletnim brskalnikom, kot so Google Chrome, Firefox, Edge ali Safari, pove, kako naj prikažejo vsebino spletne strani.
 To naredi z označevanjem gradnikov, kot so naslovi, odstavki, slike, povezave, tabele in obrazci.
 Vsaka oznaka (značka, angl. _tag_) označuje določen del vsebine.
@@ -20,6 +21,25 @@ HTML dokument je sestavljen iz vsebine in značk. _Značke_ imajo lahko lastnost
 Prepoznamo jih po oklepajih `<` in `>`, npr. `<h1>` ali `<img>`.
 Značke bomo vedno najprej odprli (`<znacka>`) in nato zaprli (`</znacka>`).
 
+:::{figure-md} markdown-fig
+![Anatomija značke](03-html/anatomija-znacke.png)
+
+&nbsp; Sestavni deli HTML značke
+:::
+
+Pri nekaterih značkah bomo uporabili tudi atribute.
+Primer značke z atributom je značka za povezavo `<a>` (angl. _anchor_).
+V atribut `href` napišemo spletni naslov, na katerega kaže povezava, vsebina značke pa je besedilo povezave,
+ki se bo prikazalo v brskalniku.
+
+Značke lahko gnezdimo eno v drugo: `<a href="http://fmf.uni-lj.si/"><em>FMF</em></a>`.
+Značke se ne smejo prekrivati.
+Če pogledamo dve znački, je bodisi ena v vsebini druge, bodisi se sploh ne prekrivata.
+Narobe je npr. `<a href="http://fmf.uni-lj.si/"><em>FMF</a></em>`.
+Predstavljate si lahko, da so značke škatle, ki držijo vsebino.
+
+### Enostaven primer HTML dokumenta
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -36,18 +56,11 @@ Značke bomo vedno najprej odprli (`<znacka>`) in nato zaprli (`</znacka>`).
 
 Včasih si je dobro predstavljati tak dokument kot hierarhijo značk:
 
+:::{figure-md} markdown-fig
 ![Hierarhija značk za zgornji primer dokumenta](03-html/html-drevo.png)
 
-Pri nekaterih značkah bomo uporabili tudi atribute.
-Primer značke z atributom je značka za povezavo `<a>` (angl. _anchor_).
-V atribut `href` napišemo spletni naslov, na katerega kaže povezava, vsebina značke pa je besedilo povezave,
-ki se bo prikazalo v brskalniku.
-
-Značke lahko gnezdimo eno v drugo: `<a href="http://fmf.uni-lj.si/"><em>FMF</em></a>`.
-Značke se ne smejo prekrivati.
-Če pogledamo dve znački, je bodisi ena v vsebini druge, bodisi se sploh ne prekrivata.
-Narobe je npr. `<a href="http://fmf.uni-lj.si/"><em>FMF</a></em>`.
-Predstavljate si lahko, da so značke škatle, ki držijo vsebino.
+&nbsp; Hierarhija značk za zgornji primer dokumenta
+:::
 
 Dodatni viri:
 
@@ -143,6 +156,11 @@ Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
 
 ## 3. naloga: predogled v brskalniku in vsebina
 
+`````{admonition} Del domače naloge
+:class: attention
+Datoteko, ki jo boste pripravili, boste potrebovali za domačo nalogo.
+`````
+
 Pri tej nalogi vam bo v pomoč paleta ukazov (Command Palette) v urejevalniku, 
 do katere dostopate preko bližnjice <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>).
 V paleti ukazov začnete tipkati ime ukaza, z vnašalko <kbd>↵</kbd> pa izberete ukaz, 
@@ -153,7 +171,6 @@ Ukaz _Wrap with Abbreviation_ označeno besedilo obda z značko, ki jo napišete
 Ko ste v paleti ukazov, lahko poiščete zobato kolo na desni strani vrstice z ukazom.
 To je ikona za nastavitve. Če jo kliknete, pridete na stran z nastavitvami,
 kjer si lahko za ta ukaz nastavite svojo neposredno bližnjico.
-
 Primer uporabe ukaza je opisan v točki 3.
 
 VSCode vam dovoli uporabljati [več kurzorjev hkrati](bliznjice:kurzorji), kar se da lepo uporabiti z
@@ -257,20 +274,15 @@ Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
 
 ## Domača naloga
 
-Pripravite VSCode za delo z Git-om. Spodaj levo kliknite na ikono _Accounts_ (nad zobnikom za nastavitve) in izberite
-`Sign in with GitHub...`. Če te možnosti ne vidite, lahko poskusite tudi s paleto ukazov: 
-<kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> > **Git: Clone** > **Clone from GitHub**.
-Če še niste prijavljeni, se bo pojavilo pogovorno okno s sporočilom
-"The extension 'GitHub' wants to sign in using GitHub."
-Izberite gumb _Allow_. Prestaviti bi vas moralo v brskalnik, kjer se prijavite 
-(zna se pojaviti še kako pogovorno okno, ki vas bo spraševalo za dovoljenje).
-Ko boste prijavljeni, boste v **Clone from GitHub** dobili seznam repozitorijev, do katerih imate dostop.
-
+Če domačo nalogo rešujete na računalniku, na katerem še nimate klona (kopije) repozitorija,
+ga najprej klonirajte s paleto ukazov: <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> > **Git: Clone**
+(morda boste morali najprej [povezati VSCode in GitHub](git:vscode)).
 Naložite datoteke na GitHub s pomočjo urejevalnika VSCode. 
 
-1. V meniju Activity Bar (čisto na levi) poiščite ikono za Git (če se zapeljete nanjo z miško, bo pisalo _Source Control_) in jo kliknite, da dobite stranski meni za nadzor nad verzijami.
+1. V opravilnem stolpcu poiščite ikono za Git (če se zapeljete nanjo z miško, bo pisalo _Source Control_) 
+   in jo kliknite, da dobite stranski meni za nadzor nad verzijami.
 2. Pod napisom _Changes_ bi morala biti našteti tudi datoteki `stran.html` in `tea-bowl.jpg`.
-   Če se nad ti dve vrstici zapeljete z miško, boste na desni strani videli ikone za dejanja.
+   Če se nad ti dve vrstici zapeljete z miško, boste na desni strani videli ikone za opravila.
    Pri obeh kliknite na <kbd>+</kbd> (_Stage Changes_, ki izvede ukaz `add`).
 3. Datoteka se bi morala premakniti pod napis _Staged Changes_. 
    Kadar naredite commit, se v repozitorij shranijo natanko spremembe, ki so naštete pod tem napisom.

@@ -149,6 +149,24 @@ Sledite navodilom v [GitHub dokumentaciji](https://docs.github.com/en/enterprise
 
 Ime ključa nastavite tako, da boste vedeli, na katerem računalniku ste ga naredili.
 
+(git:vscode)=
+## Git, GitHub in VSCode
+
+Pripravite VSCode za delo z Git-om. 
+Spodaj levo kliknite na ikono _Accounts_ (nad zobnikom za nastavitve) in izberite _Sign in with GitHub..._. 
+Če te možnosti ne vidite, lahko prijavo v vaš GitHub račun poskusite sprožiti s kloniranjem: 
+<kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> > **Git: Clone**.
+Prilepite naslov repozitorija v pogovorno okno.
+Če še niste prijavljeni, se bo pojavilo pogovorno okno s sporočilom
+"The extension 'GitHub' wants to sign in using GitHub."
+Izberite gumb _Allow_. Prestaviti bi vas moralo v brskalnik, kjer se prijavite 
+(zna se pojaviti še kako pogovorno okno, ki vas bo spraševalo za dovoljenje).
+
+Ukaz <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> > **Git: Clone** > **Clone from GitHub** 
+vam ponudi seznam repozitorijev, do katerih imate dostop.
+Zaenkrat je videti, kot da ta ukaz uporablja manj varno kloniranje s protokolom HTTPS,
+pri tem predmetu pa bomo uporabljali protokol SSH.
+
 (git:konflikti)=
 ## Zlivanje sprememb in konflikti
 
