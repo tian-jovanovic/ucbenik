@@ -12,7 +12,18 @@ Tipkanje na dotik (znano tudi kot slepo tipkanje ali desetprstno) je slog tipkan
 S tem slogom tipkanja naj bi povprečno lahko dosegli hitrost med 30 in 40 besed na minuto, 60 do 80 besed na minuto pa bi potrebovali, da bi pisali tako hitro, kot mislimo.
 Tipkanje postane lažje, ker smo lahko s pogledom osredotočeni na zaslon.
 
-Kazalca postavite na črki <kbd>F</kbd> in <kbd>J</kbd>. Ti dve tipki sta na tipkovnicah pogosto označeni z izbočenima pikama ali črticama. Ostale prste postavimo na isto vrstico. Vsakemu prstu so dodeljene tipke, kot si lahko ogledate na [sliki na Wikimedii](https://commons.wikimedia.org/wiki/File:Typing-colour_for-finger-positions.svg).
+Kazalca postavite na črki <kbd>F</kbd> in <kbd>J</kbd>. Ti dve tipki sta na tipkovnicah pogosto označeni z izbočenima pikama ali črticama. Ostale prste postavimo na isto vrstico. Vsakemu prstu so dodeljene tipke:
+
+:::{figure-md} markdown-fig
+![Položaji prstov za desetprstno tipkanje](01-vscode-in-terminal/Typing-colour_for-finger-positions.png)
+
+&nbsp; Položaji prstov za desetprstno tipkanje\
+<span class="avtor">
+   [Cy21](https://commons.wikimedia.org/wiki/User:Cy21),
+   [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0),
+   via ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Typing-colour_for-finger-positions.svg.png))
+</span>
+:::
 
 1. Preizkusite se na spletni strani [TypingTest.com](http://www.typingtest.com) (Izberite "1 minute" in "Medium").
 2. Zapomnite si svoj rezultat (WPM – words per minute), saj ga boste vpisali v anketo, ki jo boste reševali za domačo nalogo.
@@ -48,14 +59,22 @@ Temu rečemo poudarjanje sintakse in služi temu, da hitreje razberemo pomen izv
 2. Poženite VSCode in vsaj 3 minute pregledujte [dokumentacijo](https://code.visualstudio.com/docs).
 3. Preletite razdelek o [uporabniškem vmesniku](https://code.visualstudio.com/docs/getstarted/userinterface).
    Še posebej bodite pozorni na osnovno razporeditev in glavne dele vmesnika (poiščite jih na svojem računalniku): 
-    - Activity Bar, v katerem preklapljate različnimi pogledi stranskega menija, kot so datoteke, razširitve in Git;
-    - Primary Side Bar, stranski meni (oglejte si ga za datoteke, razširitve in Git),
-    - Editor Groups,
-    - Panel, 
-    - statusna vrstica (angl. _status bar_) z uporabnimi informacijami, ki jih bomo spoznali kasneje.
-4. https://code.visualstudio.com/docs/editor/codebasics
-4. V dokumentaciji poiščite, kako spremenite temo (izgled) urejevalnika in jo spremenite na tako, ki vam je všeč. 
-5. Preletite [bližnjice na tipkovnici za svoj operacijski sistem](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference).
+    - opravilni stolpec (angl. _Activity Bar_), v katerem preklapljate različnimi pogledi stranskega menija, 
+      kot so datoteke, nadzor nad verzijami in razširitve;
+    - glavni stranski meni (angl. _Primary Side Bar_): oglejte si ga za datoteke, razširitve in Git,
+    - skupine urejevalnikov (angl. _Editor Groups_),
+    - podokno (angl. _Panel_), ki vsebuje npr. ukazno vrstico in sporočila o napakah,
+    - statusna vrstica (angl. _Status Bar_) z uporabnimi informacijami, ki jih bomo spoznali kasneje.
+4. Preletite [poglavje o osnovnem urejanju kode](https://code.visualstudio.com/docs/editor/codebasics).
+5. V dokumentaciji poiščite, kako spremenite temo (izgled) urejevalnika in jo spremenite na tako, ki vam je všeč. 
+6. Preletite [bližnjice na tipkovnici za svoj operacijski sistem](https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-reference).
+
+
+:::{figure-md} markdown-fig
+![Uporabniški vmesnik urejevalnika VSCode](01-vscode-in-terminal/vscode-ui.png)
+
+&nbsp; Uporabniški vmesnik urejevalnika VSCode
+:::
 
 ## 3. naloga: življenje brez miške
 
