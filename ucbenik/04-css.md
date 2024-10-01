@@ -12,6 +12,17 @@ Zato skoraj vse spletne strani najprej uporabijo CSS, ki poenoti prikazovanje el
 Take CSS datoteke skoraj nihče ne naredi od začetka, ampak se uporabi eno od že obstoječih, kar bomo naredili tudi mi.
 V resnici se ponavadi uporabi kar enego od obstoječih ogrodij za izdelavo spletnih strani (npr. Bootstrap).
 
+`````{admonition} Shranite vaje na strežnik
+:class: important
+Na koncu vsake naloge zabeležite spremembe.
+Če naloge slučajno ne končate na vajah, vseeno zabeležite spremembe - 
+v sporočilo napišite na primer `V delu: ...` s kratkim opisom narejenega.
+[Preden odidete iz predavalnice](https://www.reddit.com/r/ProgrammerHumor/comments/3nc531/in_case_of_fire/), 
+pošljite spremembe na strežnik s paleto ukazov:
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) >
+**Git: Push**.
+`````
+
 ## Osnovni pojmi in orodja
 
 Glavni gradniki jezika CSS so deklaracije, ki so sestavljene iz lastnosti in vrednosti za to lastnost.
@@ -118,69 +129,77 @@ Bližnjice so:
 
 ## 1. naloga
 
-1. Na spletu poiščite `normalize.css` in datoteko prekopirajte v imenik s HTML dokumentom.
-2. CSS vključite v HTML dokument v glavi z značko `<link rel="stylesheet" href="ime_datoteke.css">`.
+1. V VSCode odprite imenik s svojim repozitorijem.
+   V njem naredite nov imenik `04-css` in vanj shranite arhiv [`css.zip`](04-css/css.zip).
+   Arhiv odpakirajte (če to naredi novo mapo, prestavite datoteke v imenik `04-css`).
+2. Na spletu poiščite `normalize.css` in datoteko prekopirajte v imenik `04-css`.
+3. CSS vključite v HTML dokument v glavi z značko `<link rel="stylesheet" href="ime_datoteke.css">`.
    V brskalniku poglejte, če je kaj razlike med HTML dokumentom z vključenim CSS-jem `normalize.css` in brez vključenega CSS-ja.
-3. V HTML dokumentu za `normalize.css` vključite še priloženo datoteko [`oblikovanje.css`](04-html/oblikovanje.css), ki jo boste v nadaljevanju dopolnili.
+4. V HTML dokumentu za `normalize.css` vključite še priloženo datoteko `oblikovanje.css`, 
+   ki jo boste v nadaljevanju dopolnili.
    V brskalniku poglejte, kaj je drugače zdaj, ko ste vključili to datoteko.
+5. Zabeležite spremembe: dodajte vse nove datoteke v imeniku `04-css`
+   ter napišite uporabno sporočilo, npr. `Pripravi datoteke za CSS`.
 
 ## 2. naloga
 
-1. V datoteki `oblikovanje.css` dodajte deklaracijo za naslove `h1`, v katerem določite barvo pisave, npr. na `#330066`.
-2. Na strani _The standard CSS box model_ je lep diagram robov okrog elementov:
-   `padding` je prazen prostor med robom elementa in vsebino,
-   `border` je rob, ki mu lahko določimo npr. širino, stil in barvo,
-   `margin` prazen prostor na zunanji strani roba.
-   Naslovom `h2` določite prostor nad zgornjim robom (`margin-top`) na `2em`,
-   zgornji rob naj bo širok `1px`, barve `#AAAAAA` in stila `solid`.
-   Notranji prazen prostor zgoraj naj bo visok `0.5em`.
-3. Prvi razdelek bomo oblikovali malo drugače kot ostale tri.
-   Znački `section` dodajte atribut `id` z imenom, na katerega se boste sklicevali, npr. `uvod`.
-   V HTML dokumentu ne smeta imeti dva elementa enakega `id`.
-4. V `oblikovanje.css` za element `uvod` napišite izbiralec (selektor) `#uvod`
-   z deklaracijami za notranji prostor (`padding`) širine `2em` na vseh stranicah in
-   barvo ozadja (`background-color`) `rgb(51, 0, 102, 0.1)`.
-   Tu so prve tri številke vrednosti za rdečo, zeleno in modro med 0 in 255, zadnja pa
-   prosojnost med 0 (povsem prosojno) in 1 (neprosojno, privzeta vrednost).
-   ```
-   #uvod { ... }
-   ```
-5. V datoteko `oblikovanje.css` dodajte deklaracijo za rdeč rob 
-   (poiščite na spletu, kako) za `div`.
-   Nastaviti boste morali tudi debelino črte.
-   V brskalniku poglejte, kje se pojavijo rdeči robovi.
-   Rob smo dodali zato, da vidimo, na kaj vse bomo z novim oblikovanjem vplivali oz. kaj zajame
-   izbiralec `div`.
-   Ko bodo stvari v izbranih `div`-ih dokončno oblikovane, bomo rob odstranili.
-6. Značka `div` (iz angl. _division_) se pogosto uporablja za združevanje elementov,
-   tako je tudi tu.
-   Oblikovali bomo oba elementa `div`, ki vsebujeta sliki, zato jima dodamo
-   atribut `class` z vrednostjo npr. `slika`.
-   V CSS datoteki popravite `div { ... }` v `.slika { ... }`.
-   Zdaj bi se moral rdeč rob risati le še okrog slik.
-   Deklaracijo za rob zdaj lahko izbrišete.
-   Dodajte deklaracijo za velikost pisave `0.9em` in širino `40%`.
-   V brskalniku zdaj lahko preverite, da se širina slike še ni zmanjšala
-   (širina slike prisili v večjo širino element, ki jo vsebuje).
-   Tako ozko besedilo ne izgleda dobro obojestransko poravnano, zato spremenite
-   `text-align` v `left`.
-7. Če dva izbiralca ločimo s presledkom, npr. `.slika img`,
-   bomo določali lastnosti za vse elemente, ki jih ujame drugi izbiralec,
-   ki so gnezdeni v elementih, ki jih ujame prvi izbiralec.
-   V našem primeru to pomeni vse značke `img`, ki se nahajajo v elementu z
-   atributom `class="slika"`
-   Širino slike (`width`) nastavite na npr. `100%` (širina starša), višino (`height`) pa na `auto`.
-   Slednje povzroči, da se bo ohranilo razmerje med višino in širino slike.
-8. Želimo, da se besedilo oblije okrog slik.
-   To naredimo tako, da pri `.slika` dodamo deklaracijo `float: right`.
-   Deklaracija `float` (in njej sorodna `clear`) je širše uporabna tudi pri 
-   bolj zapletenih postavitvah spletnih strani, kar pa pošteno presega okvire tega predmeta.
-   Poglejte, kaj se je zgodilo v brskalniku.
-   Da bo malo lepše, pri `.slika` dodajte še deklaracijo `margin-left: 2em`.
-9. V brskalniku pri orodjih za izvajalce poiščite CSS.
-   Večina orodij te vrste vam bo pustila na licu mesta urejati izvorno kodo (tako HTML kot tudi CSS).
-   Preizkusite, kako to izgleda na kakem primeru.
-   V Chromu in Safariju je to v zavihku Sources (lahko tudi še kje drugje).
+ 1. V datoteki `oblikovanje.css` dodajte deklaracijo za naslove `h1`, v katerem določite barvo pisave, npr. na `#330066`.
+ 2. Na strani _The standard CSS box model_ je lep diagram robov okrog elementov:
+    `padding` je prazen prostor med robom elementa in vsebino,
+    `border` je rob, ki mu lahko določimo npr. širino, stil in barvo,
+    `margin` prazen prostor na zunanji strani roba.
+    Naslovom `h2` določite prostor nad zgornjim robom (`margin-top`) na `2em`,
+    zgornji rob naj bo širok `1px`, barve `#AAAAAA` in stila `solid`.
+    Notranji prazen prostor zgoraj naj bo visok `0.5em`.
+ 3. Prvi razdelek bomo oblikovali malo drugače kot ostale tri.
+    Znački `section` dodajte atribut `id` z imenom, na katerega se boste sklicevali, npr. `uvod`.
+    V HTML dokumentu ne smeta imeti dva elementa enakega `id`.
+ 4. V `oblikovanje.css` za element `uvod` napišite izbiralec (selektor) `#uvod`
+    z deklaracijami za notranji prostor (`padding`) širine `2em` na vseh stranicah in
+    barvo ozadja (`background-color`) `rgb(51, 0, 102, 0.1)`.
+    Tu so prve tri številke vrednosti za rdečo, zeleno in modro med 0 in 255, zadnja pa
+    prosojnost med 0 (povsem prosojno) in 1 (neprosojno, privzeta vrednost).
+    ```
+    #uvod { ... }
+    ```
+ 5. V datoteko `oblikovanje.css` dodajte deklaracijo za rdeč rob 
+    (poiščite na spletu, kako) za `div`.
+    Nastaviti boste morali tudi debelino črte.
+    V brskalniku poglejte, kje se pojavijo rdeči robovi.
+    Rob smo dodali zato, da vidimo, na kaj vse bomo z novim oblikovanjem vplivali oz. kaj zajame
+    izbiralec `div`.
+    Ko bodo stvari v izbranih `div`-ih dokončno oblikovane, bomo rob odstranili.
+ 6. Značka `div` (iz angl. _division_) se pogosto uporablja za združevanje elementov,
+    tako je tudi tu.
+    Oblikovali bomo oba elementa `div`, ki vsebujeta sliki, zato jima dodamo
+    atribut `class` z vrednostjo npr. `slika`.
+    V CSS datoteki popravite `div { ... }` v `.slika { ... }`.
+    Zdaj bi se moral rdeč rob risati le še okrog slik.
+    Deklaracijo za rob zdaj lahko izbrišete.
+    Dodajte deklaracijo za velikost pisave `0.9em` in širino `40%`.
+    V brskalniku zdaj lahko preverite, da se širina slike še ni zmanjšala
+    (širina slike prisili v večjo širino element, ki jo vsebuje).
+    Tako ozko besedilo ne izgleda dobro obojestransko poravnano, zato spremenite
+    `text-align` v `left`.
+ 7. Če dva izbiralca ločimo s presledkom, npr. `.slika img`,
+    bomo določali lastnosti za vse elemente, ki jih ujame drugi izbiralec,
+    ki so gnezdeni v elementih, ki jih ujame prvi izbiralec.
+    V našem primeru to pomeni vse značke `img`, ki se nahajajo v elementu z
+    atributom `class="slika"`
+    Širino slike (`width`) nastavite na npr. `100%` (širina starša), višino (`height`) pa na `auto`.
+    Slednje povzroči, da se bo ohranilo razmerje med višino in širino slike.
+ 8. Želimo, da se besedilo oblije okrog slik.
+    To naredimo tako, da pri `.slika` dodamo deklaracijo `float: right`.
+    Deklaracija `float` (in njej sorodna `clear`) je širše uporabna tudi pri 
+    bolj zapletenih postavitvah spletnih strani, kar pa pošteno presega okvire tega predmeta.
+    Poglejte, kaj se je zgodilo v brskalniku.
+    Da bo malo lepše, pri `.slika` dodajte še deklaracijo `margin-left: 2em`.
+ 9. V brskalniku pri orodjih za izvajalce poiščite CSS.
+    Večina orodij te vrste vam bo pustila na licu mesta urejati izvorno kodo (tako HTML kot tudi CSS).
+    Preizkusite, kako to izgleda na kakem primeru.
+    V Chromu in Safariju je to v zavihku Sources (lahko tudi še kje drugje).
+10. Zabeležite spremembe: dodajte datoteke v imeniku `04-css`, ki ste jih spremenili
+    ter napišite uporabno sporočilo, npr. `Dopolni CSS`.
 
 ## 3. naloga
 
@@ -201,18 +220,22 @@ boste skoraj gotovo rešitev našli na spletu.
    lahko uporabimo, da pred vsako povezavo dodamo nek znak (poglejte primer v dokumentaciji).
 3. Z deklaracijo `border-radius` določimo zaobljene robove.
    Kaj se zgodi, če slikama nastavite zaobljenost robov na `50%`?
+4. Zabeležite spremembe: dodajte datoteke v imeniku `04-css`, ki ste jih spremenili
+   ter napišite uporabno sporočilo, npr. `Dopolni CSS`.
+
 
 ## Domača naloga
 
-1. Rešite [HTML in CSS](04-html-css/html-css.zip) nalogo,
+1. Rešite [HTML in CSS](04-css/dn-html-css.zip) nalogo,
    da dobite občutek, kako bodo izgledale naloge na izpitu.
    Na pravem izpitu bo morda naloga nekoliko težja, ker boste že več znali.
    Nalogo poskusite rešiti v največ pol ure.
-2. Vseh pet datotek (`dokument.html`, `HTCPCP_Pot.jpg`, `Htcpcp_teapot.jpg`, 
-   `normalize.css` in `oblikovanje.css`) stisnite v arhiv z imenom `ime-priimek.zip`
+2. Vseh tri datoteke (`avatar.jpg`, `dokument.html` in `oblikovanje.css`) 
+   stisnite v arhiv z imenom `⟨ime⟩-⟨priimek⟩.zip` 
+   (ustrezno popravite; če imate v imenu ali priimku kak presledek, ga nadomestite z `-`).
    in ga oddajte na učilnico do ponedeljka, 11. novembra 2024, ob ob 23:55.
    Točka za domačo nalogo se vam bo upoštevala, če boste oddali pravilno poimenovan arhiv
    s pravimi datotekami.
 
-Pregledali bomo nekaj oddanih nalog.
+Pregledali bomo nekaj domačih nalog ter nekaj oddanih nalog.
 Glavni namen tega je, da dobite povratne informacije.
