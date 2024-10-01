@@ -120,9 +120,9 @@ Bližnjice so:
 
 1. Na spletu poiščite `normalize.css` in datoteko prekopirajte v imenik s HTML dokumentom.
 2. CSS vključite v HTML dokument v glavi z značko `<link rel="stylesheet" href="ime_datoteke.css">`.
-3. V brskalniku poglejte, če je kaj razlike med HTML dokumentom z vključenim CSS-jem in brez vključenega CSS-ja.
-4. V HTML dokumentu za `normalize.css` vključite še priloženo datoteko `oblikovanje.css`, ki jo boste v nadaljevanju dopolnili.
-5. V brskalniku poglejte, kaj je drugače zdaj, ko ste vključili to datoteko.
+   V brskalniku poglejte, če je kaj razlike med HTML dokumentom z vključenim CSS-jem `normalize.css` in brez vključenega CSS-ja.
+3. V HTML dokumentu za `normalize.css` vključite še priloženo datoteko [`oblikovanje.css`](04-html/oblikovanje.css), ki jo boste v nadaljevanju dopolnili.
+   V brskalniku poglejte, kaj je drugače zdaj, ko ste vključili to datoteko.
 
 ## 2. naloga
 
@@ -201,3 +201,18 @@ boste skoraj gotovo rešitev našli na spletu.
    lahko uporabimo, da pred vsako povezavo dodamo nek znak (poglejte primer v dokumentaciji).
 3. Z deklaracijo `border-radius` določimo zaobljene robove.
    Kaj se zgodi, če slikama nastavite zaobljenost robov na `50%`?
+
+## Domača naloga
+
+1. Rešite [HTML in CSS](04-html-css/html-css.zip) nalogo,
+   da dobite občutek, kako bodo izgledale naloge na izpitu.
+   Na pravem izpitu bo morda naloga nekoliko težja, ker boste že več znali.
+   Nalogo poskusite rešiti v največ pol ure.
+2. Vseh pet datotek (`dokument.html`, `HTCPCP_Pot.jpg`, `Htcpcp_teapot.jpg`, 
+   `normalize.css` in `oblikovanje.css`) stisnite v arhiv z imenom `ime-priimek.zip`
+   in ga oddajte na učilnico do ponedeljka, 11. novembra 2024, ob ob 23:55.
+   Točka za domačo nalogo se vam bo upoštevala, če boste oddali pravilno poimenovan arhiv
+   s pravimi datotekami.
+
+Pregledali bomo nekaj oddanih nalog.
+Glavni namen tega je, da dobite povratne informacije.
