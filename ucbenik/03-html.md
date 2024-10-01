@@ -38,6 +38,10 @@ Značke se ne smejo prekrivati.
 Narobe je npr. `<a href="http://fmf.uni-lj.si/"><em>FMF</a></em>`.
 Predstavljate si lahko, da so značke škatle, ki držijo vsebino.
 
+Dodatni viri:
+
+* [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
 ### Enostaven primer HTML dokumenta
 
 ```html
@@ -61,11 +65,6 @@ Včasih si je dobro predstavljati tak dokument kot hierarhijo značk:
 
 &nbsp; Hierarhija značk za zgornji primer dokumenta
 :::
-
-Dodatni viri:
-
-* [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-
 
 ## 1. naloga: orodja za razvijalce
 
@@ -288,8 +287,11 @@ Naložite datoteke na GitHub s pomočjo urejevalnika VSCode.
    Kadar naredite commit, se v repozitorij shranijo natanko spremembe, ki so naštete pod tem napisom.
    Da naredite commit, napišite sporočilo v vnosno polje nad gumbom <kbd>Commit</kbd> (vsebuje naj besedilo `3. domača naloga`) in stisnite gumb <kbd>Commit</kbd>.
 
-Točka za domačo nalogo se vam bo upoštevala, če bo v vašem repozitoriju (na glavni oz. privzeti veji)
-sprememba (oz. _commit_) s sporočilom, ki vsebuje `3. domača naloga`. 
+Točka za domačo nalogo se vam bo upoštevala, 
+če bo v vašem repozitoriju (na glavni oz. privzeti veji)
+sprememba (oz. _commit_) datotek `stran.html` in `tea-bowl.jpg` 
+s sporočilom, ki vsebuje `3. domača naloga`.
+Datoteka `stran.html` je lahko tudi prazna, čeprav to odsvetujemo.
 Sprememba mora imeti čas med
 ponedeljkom, 14. oktobra  2024, ob 00:00 in
 ponedeljkom,  4. novembra 2024, ob 23:55.
