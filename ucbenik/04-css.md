@@ -10,7 +10,7 @@ Po tem načelu se vizualni in oblikovni vidiki (predstavitev in slog) ločijo od
 Različni brskalniki imajo različne načine za prikazovanje nekaterih elementov spletnih strani.
 Zato skoraj vse spletne strani najprej uporabijo CSS, ki poenoti prikazovanje elementov.
 Take CSS datoteke skoraj nihče ne naredi od začetka, ampak se uporabi eno od že obstoječih, kar bomo naredili tudi mi.
-V resnici se ponavadi uporabi kar enega od obstoječih ogrodij za izdelavo spletnih strani (npr. Bootstrap).
+V resnici se ponavadi uporabi kar enego od obstoječih ogrodij za izdelavo spletnih strani (npr. Bootstrap).
 
 ## Osnovni pojmi in orodja
 
@@ -51,19 +51,36 @@ Prav vam bodo prišli spodnji enostavni izbiralci
   ki izbere vse značke v dokumentu.
 
 Enostavne izbiralce lahko združimo v [sestavljene izbiralce](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selector_structure#compound_selector), tako da jih staknemo brez presledkov;
-pri tem moramo paziti na to, da najprej napišemo izbiralec za značke ali univerzalni izbiralec:
+pri tem moramo paziti na to, da najprej napišemo izbiralec za značke ali univerzalni izbiralec.
+Primer: `p.poudarjeno` združi izbiralca `p` in `.poudarjeno`:
+izbere vse značke `p` (za odstavke), ki imajo določen atribut `class` z vrednostjo `poudarjeno`.
 
-- `p.poudarjeno` izbere vse značke `p` (za odstavke), ki imajo določen atribut `class` z vrednostjo `poudarjeno`,
-- `[title].`
-
-Izbiralce se da sestavljati v kompleksne izbiralce s t.i. kombinatorji, vendar tu naštejmo le nekaj primerov; 
+Izbiralce se da sestavljati v kompleksne izbiralce s t.i. kombinatorji, vendar tu omenimo le dva enostavna primera; 
 za kaj več si poglejte [dokumentacijo](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors).
 
+- Potomce izbiramo s kombinatorjem ` ` (presledek). 
+  Na primer, izbiralec `li a` izbere vse povezave (`a`), ki so v elementih seznama (`li`).
+- Z vejico `,` združimo več izbiralcev v enega: izbiralec `h1, h2` izbere vse značke `h1` in `h2`.
 
-
-- 
+Včasih pridejo prav tudi t.i. psevdo-razredi, s katerimi izbiramo elemente, ki imajo posebno stanje.
+Ponavadi jih uporabimo tako, da jih pritaknemo na koncu izbiralca.
+Primer: elemente, nad katerimi je miška, izberemo s `:hover`.
+Tako lahko npr. izberemo vse povezave, nad katerimi je miška (`a:hover`), da jim spremenimo barvo.
 
 ### Škatlasti model
+
+Že prejšnji teden smo omenili, da si lahko HTML značke (elemente spletne strani) predstavljate kot škatle,
+ki držijo vsebino in druge škatle.
+Ta analogija pride prav tudi pri oblikovanju elementov.
+Vsak element strani, recimo odstavek ali slika, je obravnavan kot škatla ali okvir, ki je sestavljena iz štirih glavnih delov:
+
+:::{figure-md} markdown-fig
+![Škatlasti model](04-css/box-model.png)
+
+&nbsp; Škatlasti model
+:::
+
+Dodatni viri:
 
 * [The standard CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_standard_css_box_model)
 
@@ -99,13 +116,6 @@ Bližnjice so:
 - MacOS (Chrome, Firefox): <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>
 - MacOS (Safari): <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>E</kbd> (oz. **Develop** > **Empty Caches**)
 
-### Orodja za razvijalce:
-
-* Chrome: odprite stranski meni in izberite **More tools** > **Developer Tools**,
-* Firefox: odprite stranski meni in izberite **More tools** > **Web Developer Tools**,
-* Safari: odprite meni "Develop" in izberite "Show Web Inspector".
-* Alternativno lahko Orodja za razvijalce neposredno odprete s pritiskom na tipko F12 ali pa z uporabo bližnjice CTRL+SHIFT+I (COMMAND+OPTION+I)
-
 ## 1. naloga
 
 1. Na spletu poiščite `normalize.css` in datoteko prekopirajte v imenik s HTML dokumentom.
@@ -125,7 +135,7 @@ Bližnjice so:
    zgornji rob naj bo širok `1px`, barve `#AAAAAA` in stila `solid`.
    Notranji prazen prostor zgoraj naj bo visok `0.5em`.
 3. Prvi razdelek bomo oblikovali malo drugače kot ostale tri.
-   Znački `section` dodajte atribut `id` z imenom, na katerega se boste sklicevali, npr. "uvod".
+   Znački `section` dodajte atribut `id` z imenom, na katerega se boste sklicevali, npr. `uvod`.
    V HTML dokumentu ne smeta imeti dva elementa enakega `id`.
 4. V `oblikovanje.css` za element `uvod` napišite izbiralec (selektor) `#uvod`
    z deklaracijami za notranji prostor (`padding`) širine `2em` na vseh stranicah in

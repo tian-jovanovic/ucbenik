@@ -15,6 +15,17 @@ V ozadju te oznake pomagajo brskalniku razumeti, kaj naj prikaže in kako naj to
 - razširitev [HTML Preview](https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode).
 `````
 
+`````{admonition} Shranite vaje na strežnik
+:class: important
+Na koncu 2.-4. naloge zabeležite spremembe.
+Če naloge slučajno ne končate na vajah, vseeno zabeležite spremembe - 
+v sporočilo napišite na primer `V delu: ...` s kratkim opisom narejenega.
+[Preden odidete iz predavalnice](https://www.reddit.com/r/ProgrammerHumor/comments/3nc531/in_case_of_fire/), 
+pošljite spremembe na strežnik s paleto ukazov:
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>) >
+**Git: Push**.
+`````
+
 ## Struktura dokumenta
 
 HTML dokument je sestavljen iz vsebine in značk. _Značke_ imajo lahko lastnosti oz. atribute. 
@@ -116,42 +127,54 @@ Tudi mi se bomo držali tega dogovora.
    Enici v oglatih oklepajih nam povesta, da je težava v prvi vrstici (in prvem stolpcu).
 
 2. Težavo odpravimo tako, da napišemo značko `DOCTYPE`.
-  Ta brskalniku pove, za kakšno vrsto dokumenta gre.
-  Napišite `<` in počakajte, da se vam v priročnem meniju pokaže možnost `DOCTYPE`.
-  Morda boste morali dopisati še klicaj: `<!`. Stisnite vnašalko <kbd>↵</kbd>. 
-  Zdaj bi moralo v prvi vrstici pisati `<!DOCTYPE html>`.
-  Če ne, lahko značko tudi prekopirate od tu.
-  Značka `DOCTYPE` ne potrebuje zaključne značke.
+   Ta brskalniku pove, za kakšno vrsto dokumenta gre.
+   Napišite `<` in počakajte, da se vam v priročnem meniju pokaže možnost `DOCTYPE`.
+   Morda boste morali dopisati še klicaj: `<!`. Stisnite vnašalko <kbd>↵</kbd>. 
+   Zdaj bi moralo v prvi vrstici pisati `<!DOCTYPE html>`.
+   Če ne, lahko značko tudi prekopirate od tu.
+   Značka `DOCTYPE` ne potrebuje zaključne značke.
 
 3. V novo vrstico (zaradi preglednosti) za značko `DOCTYPE` napišite značko `html`: 
-  Kot prej, lahko napišete `<` in iz priročnega menija izberete `html`, lahko pa samo napišete `<html`.
-  Zaključno značko vam bo urejevalnik dopisal sam,
-  ko boste značko napisali do konca z znakom `>`: `<html>`.
-  V drugi vrstici bi zdaj moralo pisati `<html></html>`, kurzor pa bi moral stati med `><`.
-  Stisnite vnašalko <kbd>↵</kbd> za novo vrstico.
+   Kot prej, lahko napišete `<` in iz priročnega menija izberete `html`, lahko pa samo napišete `<html`.
+   Zaključno značko vam bo urejevalnik dopisal sam,
+   ko boste značko napisali do konca z znakom `>`: `<html>`.
+   V drugi vrstici bi zdaj moralo pisati `<html></html>`, kurzor pa bi moral stati med `><`.
+   Stisnite vnašalko <kbd>↵</kbd> za novo vrstico.
 
 4. V značko `html` dodajte eno za drugo še znački `head` in `body`.
-  Zamaknjeni naj bosta za dva presledka (tudi to delamo zaradi preglednosti).
-  Na splošno naj bodo gnezdene značke vedno zamaknjene za dva presledka glede na višji nivo.
-  V zavihku _Problems_ bi se moralo pojaviti novo opozorilo. 
-  Odpravite ga, pa tudi tisto opozorilo, ki se pojavi takoj za tem.
+   Zamaknjeni naj bosta za dva presledka (tudi to delamo zaradi preglednosti).
+   Na splošno naj bodo gnezdene značke vedno zamaknjene za dva presledka glede na višji nivo.
+   V zavihku _Problems_ bi se moralo pojaviti novo opozorilo. 
+   Odpravite ga, pa tudi tisto opozorilo, ki se pojavi takoj za tem.
 
 5. Na spletni strani za [HTML standard](https://validator.w3.org/nu/#textarea) lahko preverite, 
-  kako se vaša izvorna koda obnese pri bolj strogem preverjanju.
-  Koda za slovenski jezik je `sl`, za angleški pa `en`.
-  Značka `html` z atributom za jezik pa izgleda takole: `<html lang="en">`.
+   kako se vaša izvorna koda obnese pri bolj strogem preverjanju.
+   Koda za slovenski jezik je `sl`, za angleški pa `en`.
+   Značka `html` z atributom za jezik pa izgleda takole: `<html lang="en">`.
 
 6. Značka `title` določi naslov dokumenta, kot se prikaže v naslovni vrstici brskalnika.
-  Naslov dokumenta naj bo "ISO 3103".
+   Naslov dokumenta naj bo "ISO 3103".
 
 7. V glavo dokumenta dodajte spodnjo značko, da določite kodiranje dokumenta
-  `<meta charset="UTF-8">`. Te značke ni treba zaključiti.
-  Če je ne boste dodali, se vam bo znak `±` prikazoval takole nekako: `Â±`.
+   `<meta charset="UTF-8">`. Te značke ni treba zaključiti.
+   Če je ne boste dodali, se vam bo znak `±` prikazoval takole nekako: `Â±`.
 
-8. Za reševanje skupaj: na tablo narišite drevesno strukturo značk.
+8. Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
+   Če ne veste kako, se obrnite na asistentko ali asistenta.
 
-Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
-Če ne veste kako, se obrnite na asistentko ali asistenta.
+9. Zabeležite spremembo:
+   1. V opravilnem stolpcu poiščite ikono za Git (če se zapeljete nanjo z miško, bo pisalo _Source Control_) 
+      in jo kliknite, da dobite stranski meni za nadzor nad verzijami.
+   2. Pod napisom _Changes_ bi morala biti našteta datoteka `stran.html`.
+      Če se nad vrstico z imenom datoteke zapeljete z miško, boste na desni strani videli ikone za opravila.
+      Kliknite na <kbd>+</kbd> (_Stage Changes_, ki izvede ukaz [`add`](git:osnovni-ukazi)).
+   3. Datoteka se bi morala premakniti pod napis _Staged Changes_. 
+      Kadar zabeležite spremembo (naredite _commit_), 
+      se v repozitorij shranijo natanko spremembe, ki so naštete pod tem napisom.
+      Da naredite commit, napišite sporočilo v vnosno polje nad gumbom <kbd>Commit</kbd>,
+      v katerem v nekaj besedah opišete, kaj ste naredili, npr. `Pripravi strukturo HTML dokumenta`.
+
+Za reševanje skupaj: na tablo narišite drevesno strukturo značk.
 
 ## 3. naloga: predogled v brskalniku in vsebina
 
@@ -236,7 +259,11 @@ kot pri enem samem kurzorju.
     Verjetno bo prevelika, tako da jo za zdaj zakomentirajte:
     v paleti ukazov poiščete `comment` in izberete _Add Line Comment_.
 
-Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
+12. Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
+
+13. Zabeležite spremembo: dodajte datoteki `stran.html` in `tea-bowl.jpg`
+    ter napišite uporabno sporočilo, npr. `Dodaj vsebino HTML dokumenta`.
+    
 
 ## 4. naloga
 
@@ -271,22 +298,13 @@ Počistite vse napake in opozorila, preden nadaljujete z naslednjo nalogo.
    Popravite elemente seznama pod "Contents" tako, da bodo delujoče povezave na ustrezne
    dele strani.
 
+7. Zabeležite spremembo: dodajte datoteki `stran.html`
+   ter napišite uporabno sporočilo, npr. `Dodaj formule in sklicevanje`.
+
 ## Domača naloga
 
-Če domačo nalogo rešujete na računalniku, na katerem še nimate klona (kopije) repozitorija,
-ga najprej klonirajte s paleto ukazov: <kbd>Ctrl</kbd>/<kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> > **Git: Clone**
-(morda boste morali najprej [povezati VSCode in GitHub](git:vscode)).
-Naložite datoteke na GitHub s pomočjo urejevalnika VSCode. 
-
-1. V opravilnem stolpcu poiščite ikono za Git (če se zapeljete nanjo z miško, bo pisalo _Source Control_) 
-   in jo kliknite, da dobite stranski meni za nadzor nad verzijami.
-2. Pod napisom _Changes_ bi morala biti našteti tudi datoteki `stran.html` in `tea-bowl.jpg`.
-   Če se nad ti dve vrstici zapeljete z miško, boste na desni strani videli ikone za opravila.
-   Pri obeh kliknite na <kbd>+</kbd> (_Stage Changes_, ki izvede ukaz `add`).
-3. Datoteka se bi morala premakniti pod napis _Staged Changes_. 
-   Kadar naredite commit, se v repozitorij shranijo natanko spremembe, ki so naštete pod tem napisom.
-   Da naredite commit, napišite sporočilo v vnosno polje nad gumbom <kbd>Commit</kbd> (vsebuje naj besedilo `3. domača naloga`) in stisnite gumb <kbd>Commit</kbd>.
-
+1. Če za študij uporabljate še kak drug računalnik, ga pripravite za delo z Git-om in VSCode.
+2. 
 Točka za domačo nalogo se vam bo upoštevala, 
 če bo v vašem repozitoriju (na glavni oz. privzeti veji)
 sprememba (oz. _commit_) datotek `stran.html` in `tea-bowl.jpg` 

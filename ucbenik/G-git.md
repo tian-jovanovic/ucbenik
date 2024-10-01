@@ -8,6 +8,7 @@ Več o shranjevanju sprememb v Git si lahko preberete v prijaznem povzetku na
 [Atlassian spletni strani](https://www.atlassian.com/git/tutorials/saving-changes),
 povezave na dokumentacijo za posamezne ukaze pa so spodaj.
 
+(git:osnovni-ukazi)=
 ## Osnovni ukazi
 
 - Ukaz [`add`](https://github.com/git-guides/git-add) 

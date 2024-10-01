@@ -6,6 +6,7 @@ parts:
   - file: 01-vscode-in-terminal.md
   - file: 02-git-in-markdown.md
   - file: 03-html.md
+  - file: 04-css.md
 - caption: Plonkci in ostali dodatki
   chapters:
   - file: A-programska-oprema.md
