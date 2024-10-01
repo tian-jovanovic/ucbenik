@@ -304,11 +304,16 @@ kot pri enem samem kurzorju.
 ## Domača naloga
 
 1. Če za študij uporabljate še kak drug računalnik, ga pripravite za delo z Git-om in VSCode.
-2. 
+2. Dokončajte vaje, če jih še niste.
+3. Nekaj časa igrajte [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl)
+    1. Odprite ukazno vrstico in se premaknite v imenik, kjer imate spravljene repozitorije.
+    2. Klonirajte repozitorij: `git clone https://gitlab.com/slackermedia/bashcrawl.git bashcrawl`.
+    3. Premaknite se na začetek igre: `cd bashcrawl/entrance`.
+    4. Preberite zvitek z navodili: `cat scroll`.
+
 Točka za domačo nalogo se vam bo upoštevala, 
 če bo v vašem repozitoriju (na glavni oz. privzeti veji)
-sprememba (oz. _commit_) datotek `stran.html` in `tea-bowl.jpg` 
-s sporočilom, ki vsebuje `3. domača naloga`.
+sprememba (oz. _commit_) datotek `stran.html` in `tea-bowl.jpg`.
 Datoteka `stran.html` je lahko tudi prazna, čeprav to odsvetujemo.
 Sprememba mora imeti čas med
 ponedeljkom, 14. oktobra  2024, ob 00:00 in
