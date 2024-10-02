@@ -232,8 +232,8 @@ boste skoraj gotovo rešitev našli na spletu.
    Nalogo poskusite rešiti v največ pol ure.
 2. Vseh tri datoteke (`avatar.jpg`, `dokument.html` in `oblikovanje.css`) 
    stisnite v arhiv z imenom `⟨ime⟩-⟨priimek⟩.zip` 
-   (ustrezno popravite; če imate v imenu ali priimku kak presledek, ga nadomestite z `-`).
-   in ga oddajte na učilnico do ponedeljka, 11. novembra 2024, ob ob 23:55.
+   (ustrezno popravite; če imate v imenu ali priimku kak presledek, ga nadomestite z vezajem `-`) in ga 
+   [oddajte na učilnico do ponedeljka, 11. novembra 2024, ob 23:55](https://ucilnica.fmf.uni-lj.si/mod/assign/view.php?id=70566).
    Točka za domačo nalogo se vam bo upoštevala, če boste oddali pravilno poimenovan arhiv
    s pravimi datotekami.
 3. [Namestite LaTeX](namestitev:latex) na svoj računalnik. 
