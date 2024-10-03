@@ -305,11 +305,12 @@ kot pri enem samem kurzorju.
 
 1. Če za študij uporabljate še kak drug računalnik, ga pripravite za delo z Git-om in VSCode.
 2. Dokončajte vaje, če jih še niste.
-3. Nekaj časa igrajte [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl)
+3. Nekaj časa (recimo 20 minut) igrajte [Bashcrawl](https://gitlab.com/slackermedia/bashcrawl)
     1. Odprite ukazno vrstico in se premaknite v imenik, kjer imate spravljene repozitorije.
     2. Klonirajte repozitorij: `git clone https://gitlab.com/slackermedia/bashcrawl.git bashcrawl`.
     3. Premaknite se na začetek igre: `cd bashcrawl/entrance`.
     4. Preberite zvitek z navodili: `cat scroll`.
+4. Enkrat pred naslednjimi vajami si preberite začetek [poglavja o CSS](04-css.html) (do 1. naloge).
 
 Točka za domačo nalogo se vam bo upoštevala, 
 če bo v vašem repozitoriju (na glavni oz. privzeti veji)
