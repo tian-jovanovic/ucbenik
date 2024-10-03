@@ -180,12 +180,12 @@ Najprej preverimo, ali je vaš urejevalnik pripravljen za delo z
 
 ## 2. naloga: urnik 
 
-1. V glavnem imeniku repozitorija naredite nov imenik, `latex-pregled` in 
-   v njem odpakirajte arhiv [`latex-pregled.zip`](06-uvod-v-latex/latex-pregled.zip).
-2. V imenik `06-uvod-v-latex` shranite [datoteke za nalogo Urnik](TODO)
-3. Besedilo v datoteki `urnik.tex` oblikujte v LaTeX-u tako, 
-   da bo prevedena PDF datoteka čim bolj podobna rešitvi.
-   Pri reševanju si pomagajte z uvodno pregledno datoteko.
+- V glavnem imeniku repozitorija naredite nov imenik, `latex-pregled` in 
+  v njem odpakirajte arhiv [`latex-pregled.zip`](06-uvod-v-latex/latex-pregled.zip).
+- V imenik `06-uvod-v-latex` shranite [datoteke za nalogo Urnik](TODO)
+- Besedilo v datoteki `urnik.tex` oblikujte v LaTeX-u tako, 
+  da bo prevedena PDF datoteka čim bolj podobna rešitvi.
+  Pri reševanju si pomagajte z uvodno pregledno datoteko.
 
 V datoteki `urnik.tex` je vsebina že označena z okoljem `document`, vrsta
 dokumenta pa je že nastavljena na `article`. 
@@ -203,81 +203,59 @@ V paleti ukazov boste pod `latex surround` našli dva uporabna ukaza:
 Pri nekaterih nalogah se splača uporabiti več kurzorjev hkrati;
 bližnjice poiščite v [plonkcu](bliznjice:vscode).
 
-1.  Velikost strani naj bo `A4`, osnovna velikost pisave pa `10pt` (to so
-    nastavitve za ukaz `documentclass`, ki jih ločite z vejicami).
-    
-2.  Vključite pakete za podporo slovenščini, prepoznavo vhodnega kodiranja
-    `utf8` in izhodnega kodiranja `T1`.
-    
-3.  Pri tej nalogi (in tudi vseh naslednjih) si pomagajte s paleto ukazov!
-    Naslov, avtor, datum in povzetek naj bodo izdelani z uporabo ukazov in
-    okolja, ki so v ta namen definirani v razredu `article`. Da se bo glava
-    dokumenta s temi podatki prikazala, morate uporabiti ukaz `\maketitle`.
-    
-4.  V besedilu določi, kaj so naslovi razdelkov, podrazdelkov in
-    podpodrazdelkov. Dovolj je, na določite enega ali dva na začetku, ostale pa sproti.
-    
-5.  Primer vsebine XML datoteke in načrti postopkov naj bodo prikazani v
-    posebnem okolju, ki ohranja presledke na začetku vrstic, prelome vrstic, ter
-    prikaže odstavek, kot da je napisan na pisalni stroj. To okolje se imenuje
-    `verbatim`.
-    
-6.  Poskrbi za oštevilčene in neoštevilčene sezname. S pomočjo ukaza iz palete
-    naredite ustrezno okolje. Z večimi kurzorji hkrati napišite še ukaze `\item`, 
-    kjer jih potrebujete.
-    Pri prvem seznamu se vsi elementi začnejo z besedo `Razred`, zato lahko več 
-    kurzorjev na pravih mestih dobite enostavno s pomočjo iskanja.
-    Navodila za ležeče besede so v naslednji nalogi.
+1. Velikost strani naj bo `A4`, osnovna velikost pisave pa `10pt` (to so
+   nastavitve za ukaz `documentclass`, ki jih ločite z vejicami).
 
-7.  V besedilu je definiranih nekaj novih pojmov. Zapisani so med poševnima
-    črtama. Da bodo prikazani ležeče, uporabi ukaz `\emph`. Pomagaj si z orodjem
-    *Replace* in regularnimi izrazi. V polju za iskanje 
-    (odpremo ga z <kbd>Ctrl</kbd> + <kbd>F</kbd> oz. 🍎 <kbd>Cmd</kbd> + <kbd>F</kbd>) 
-    izberemo možnost za iskanje z regularnimi izrazi (gumb z napisom `.*`). 
-    Vpišite vzorec `/(.*)/`, ki pomeni, da iščemo nize znakov (`(.*)`) obdane z dvema poševnicama. 
-    Za zamenjavo vpišemo `\emph{$1}`: niz `$1` se bo zamenjal s tistim, kar je prej stalo med
-    poševnicami.
-    
-8.  Kjer v besedilu najdeš dva vprašaja, ju nadomesti z ustreznim matematičnim
-    izrazom. Nadomesti prvi izraz, ostale pa na koncu, če ostane čas. *Pozor:*
-    dva izraza sta zapisana sredinsko poravnano v svoji vrstici (na predavanjih
-    ste videli, kako se to naredi). Piko za množenje dobiš z ukazom `\cdot`.
-    Kadar je potrebno del besedila zapisati v matematičnem okolju, uporabi ukaz
-    `\text` iz paketa `amsmath`.
-    
-9.  Odstavki, ki sledijo seznamom in postopkom, nimajo zamaknjene prve vrstice.
-    To dosežeš z ukazom `\noindent` na začetku odstavka.
-    
-10. V besedilu je *16* vezajev in pomišljajev. Pomišljaje napravi daljše
-    (širše), vezaje pa pusti takšne kot so. Pomišljaje prepoznate po tem, da so
-    obdani s presledkoma: ` - `. Popravite lahko vse naenkrat s pomočjo iskanja
-    in zamenjave. Pomišljaj napišemo z dvema črticama med dvema
-    presledkoma: ` -- `.
-    
-11. Na dveh mestih je del besedila zapisan v dvojnih narekovajih. Poskrbi, da
-    bodo narekovaji pravilni slovenski. Slovenske narekovaje v LaTeX-u dobimo
-    ``">takole"<`` ali pa ``"`takole"'``. Napačni načini pisanja narekovajev:
-    znaka za levi in desni narekovaj nista enaka, zato se *ne* piše
-    ``'takole'`` ali ``''takole''``. Še posebej pa se ne piše ``"takole"``.
-    Uporabite iskanje in zamenjavo z regularnimi izrazi. 
-    Vzorec iz 7. naloge morate samo malo popraviti: 
-    namesto poševnic napišite dvojne narekovaje, pri zamenjavi pa obdržite `$1`,
-    začetek in konec pa popravite: `\emph{` zamenjajte z `">`, `}` pa z `"<`.
-    
-12. V predzadnjem odstavku so tri črke podčrtane.
-    
-13. Pred podrazdelkom Omejitve morajo biti tri besede (`bool`, `true`, `false`)
-    zapisane v drugačni pisavi (kot bile natipkane s pisalnim strojem).
-    
-14. Poskrbite, da presledki za pikami, ki ne pomenijo konca stavka, ne bodo
-    preveliki. Taki so na primer presledki v datumu ter za kraticami npr. in
-    t.i.
-    Pomagate si lahko z iskanjem in zamenjavo z regularnimi izrazi.
-    Pazite, da boste vključili tudi razlikovanje velikih in malih črk (gumb `Aa`).
-    Kaj naredi vzorec `\. ([a-z])`?
+2. V datoteki so naslovi razdelkov, podrazdelkov in podpodrazdelkov
+   označeni s komentarji `% razdelek`, `% podrazdelek` in `% podpodrazdelek`.
+   Pomagajte si z orodjem _Replace_ iz palete ukazov in regularnimi izrazi, 
+   da jih označite kot take. 
+   V polju za iskanje (<kbd>Ctrl</kbd> + <kbd>F</kbd> oz. 🍎 <kbd>Cmd</kbd> + <kbd>F</kbd>) 
+   izberite možnost za iskanje z regularnimi izrazi (gumb z napisom `.*`).
+   Za razdelek uporabite vzorec `^(.*) % razdelek`: poiščemo vrstice, 
+   ki se začnejo s poljubnim nizom znakov (tega si zapomnimo, ker je v `()`), 
+   ki se nadaljuje točno z nizom znakov ` % razdelek`.
+   Za zamenjavo vpišemo `\section{$1}`: niz `$1` se bo zamenjal s tistim, 
+   kar se je ujelo z vzorcem `(.*)`.
+   Podobno popravite še podrazdelke in podpodrazdelke.
 
-15. Če tega niste naredili prej, je sedaj čas, da zamenjate vse `??` s
-    pripadajočimi matematičnimi izrazi.
+3. Sledite navodilom v komentarjih v datoteki `urnik.tex`.
+   Pomagajte si s pregledno datoteko `1-osnove.tex`.
+   Kjer v besedilu najdete dva vprašaja `??`, ju nadomestite z ustreznim 
+   matematičnim izrazom. 
+   **Pozor:** dva izraza sta zapisana sredinsko poravnano v svoji vrstici:
+   tam morate uporabiti prikazni način, ne vrstičnega.
+   Piko za množenje dobite z ukazom `\cdot`.
+   Običajne besede v matematičnem okolju označite z ukazom `\text`, da se bodo
+   pravilno prikazale; ta ukaz potrebuje paket `amsmath`, 
+   ki ga morate šele vključiti.
+
+4. V besedilu je *16* vezajev in pomišljajev, ki so vsi napisani z znakom `-`. 
+   Pomišljaje napravite širše, vezaje pa pustite takšne kot so. 
+   Pomišljaje prepoznate po tem, da so obdani s presledkoma: ` - `. 
+   Popravite lahko vse naenkrat s pomočjo iskanja in zamenjave. 
+   Pomišljaj v LaTeX-u napišemo z dvema črticama med dvema presledkoma: ` -- `.
+    
+5. Na dveh mestih je del besedila zapisan v dvojnih narekovajih;
+   poskrbite, da bodo ti pravilni slovenski. 
+   V LaTeX-u dobimo slovenske narekovaje ``">takole"<`` ali pa ``"`takole"'``. 
+   Napačni načini pisanja narekovajev: znaka za levi in desni narekovaj nista enaka, 
+   zato se *ne* piše ``'takole'`` ali ``''takole''``. Še posebej pa se ne piše ``"takole"``.
+   Uporabite iskanje in zamenjavo z regularnimi izrazi. 
+   Vzorec iz prejšnjih nalog morate samo malo popraviti.
+
+6. Poskrbite, da presledki za pikami, ki ne pomenijo konca stavka, ne bodo
+   preveliki. Taki so na primer presledki v datumu ter za kraticami npr. in t.i.
+   Pomagate si lahko z iskanjem in zamenjavo z regularnimi izrazi.
+   Pazite, da boste vključili tudi razlikovanje velikih in malih črk (gumb `Aa`).
+   Kaj naredi vzorec `\. ([a-z])`?
+
+7. Pripravite datoteko [`.gitignore`](git:gitignore), tako da vam med spremembami ne bo treba gledati
+   LaTeX-ovih pomožnih datotek (s končnicami `.aux`, `.fdb_latexmk`, `.fls`, `.log`, `.synctex.gz`)
+   in da ne boste v repozitoriju shranjevali PDF datoteke (ker se ta proizvede s programom).
+   Datoteko shranite v glavni imenik repozitorija. Pravilno bo napisana, ko boste med spremembami
+   videli samo datoteki `urnik.tex` in `.gitignore`.
+   Spremembi zabeležite in pošljite na strežnik.
 
 
 ## Domača naloga
