@@ -12,6 +12,13 @@ Zato skoraj vse spletne strani najprej uporabijo CSS, ki poenoti prikazovanje el
 Take CSS datoteke skoraj nihče ne naredi od začetka, ampak se uporabi eno od že obstoječih, kar bomo naredili tudi mi.
 V resnici se ponavadi uporabi kar enego od obstoječih ogrodij za izdelavo spletnih strani (npr. Bootstrap).
 
+`````{admonition} Programska oprema
+:class: important
+- [Visual Studio Code](namestitev:vscode),
+- razširitev [HTMLHint](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint) in 
+- razširitev [HTML Preview](https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode).
+`````
+
 `````{admonition} Shranite vaje na strežnik
 :class: important
 Na koncu vsake naloge zabeležite spremembe.

@@ -1,5 +1,11 @@
 # Splet in še kaj
 
+`````{admonition} Programska oprema
+:class: important
+- [ukazna vrstica](namestitev:ukazna),
+- [Visual Studio Code](namestitev:vscode).
+`````
+
 ## 1. naloga: postavite spletno stran
 
 1. Odprite imenik s svojim repozitorijem.
