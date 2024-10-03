@@ -127,7 +127,7 @@ Bližnjice so:
 - MacOS (Chrome, Firefox): <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>
 - MacOS (Safari): <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>E</kbd> (oz. **Develop** > **Empty Caches**)
 
-## 1. naloga
+## 1. naloga: dodajanje pravil za oblikovanje v dokument
 
 1. V VSCode odprite imenik s svojim repozitorijem.
    V njem naredite nov imenik `04-css` in vanj shranite arhiv [`css.zip`](04-css/css.zip).
@@ -141,7 +141,7 @@ Bližnjice so:
 5. Zabeležite spremembe: dodajte vse nove datoteke v imeniku `04-css`
    ter napišite uporabno sporočilo, npr. `Pripravi datoteke za CSS`.
 
-## 2. naloga
+## 2. naloga: oblikovanje dokumenta
 
  1. V datoteki `oblikovanje.css` dodajte deklaracijo za naslove `h1`, v katerem določite barvo pisave, npr. na `#330066`.
  2. Na strani _The standard CSS box model_ je lep diagram robov okrog elementov:
@@ -201,7 +201,7 @@ Bližnjice so:
 10. Zabeležite spremembe: dodajte datoteke v imeniku `04-css`, ki ste jih spremenili
     ter napišite uporabno sporočilo, npr. `Dopolni CSS`.
 
-## 3. naloga
+## 3. naloga: naprednejše oblikovanje
 
 Spodnji primeri ilustrirajo del stvari, ki jih lahko naredite s CSS.
 To vsekakor ni izčrpen seznam. Če vas zanima, kako se nekaj naredi s CSS,

@@ -1,8 +1,6 @@
 # Splet in še kaj
 
-## 1. naloga
-
-Postavite spletno stran.
+## 1. naloga: postavite spletno stran
 
 1. Odprite imenik s svojim repozitorijem.
 2. Izberite si eno od HTML datotek, ki ste jih naredili pri vajah,
@@ -23,7 +21,7 @@ Postavite spletno stran.
 poslali na strežnik, se bo v nekaj minutah (ponavadi hitreje kot v desetih)
 posodobila tudi spletna stran.
 
-## 2. naloga
+## 2. naloga: opisovanje vzorcev z regularnimi izrazi
 
 [Regularni izrazi](https://en.wikipedia.org/wiki/Regular_expression) 
 (angl. _regular expressions_ ali kratko _regex_) so zaporedja znakov, 

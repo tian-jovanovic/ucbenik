@@ -265,7 +265,7 @@ kot pri enem samem kurzorju.
     ter napišite uporabno sporočilo, npr. `Dodaj vsebino HTML dokumenta`.
     
 
-## 4. naloga
+## 4. naloga: matematika in sklicevanje
 
 1. V drugem odstavku poudarite začetek "ISO 3103" z značko `strong`.
    Besedilo "brewing tea" označite z značko `em`.
