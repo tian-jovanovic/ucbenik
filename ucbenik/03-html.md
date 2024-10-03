@@ -310,7 +310,7 @@ kot pri enem samem kurzorju.
     2. Klonirajte repozitorij: `git clone https://gitlab.com/slackermedia/bashcrawl.git bashcrawl`.
     3. Premaknite se na začetek igre: `cd bashcrawl/entrance`.
     4. Preberite zvitek z navodili: `cat scroll`.
-4. Enkrat pred naslednjimi vajami si preberite začetek [poglavja o CSS](04-css.html) (do 1. naloge).
+4. Enkrat pred naslednjimi vajami si preberite začetek [poglavja o CSS](04-css) (do 1. naloge).
 
 Točka za domačo nalogo se vam bo upoštevala, 
 če bo v vašem repozitoriju (na glavni oz. privzeti veji)

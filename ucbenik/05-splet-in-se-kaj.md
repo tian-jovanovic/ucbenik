@@ -61,3 +61,7 @@ Na gumb _Continue_ vam ni treba klikniti, dovolj je, da stisnete vnašalko <kbd>
 8. rickroll
 
 Namen je, da ponovijo oz. vidijo nekaj malega novega pri ukazni, gitu in html/css.
+
+## Domača naloga
+
+1. Preberite si začetek [poglavja o LaTeX-u](06-uvod-v-latex) (do 1. naloge).
