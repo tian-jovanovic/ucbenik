@@ -85,8 +85,8 @@ Težavo odpravimo tako, da v spisku bližnjic odstranimo povezavo <kbd>Ctrl</kbd
 
 1. Odpremo datoteko LaTeX, da se aktivira LaTeX paket.
 2. <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>K</kbd>, prikaže se spisek vseh bližnjic.
-3. V iskalnik vtipkamo neželeno bližnjico (se pravi, da dejanski natipkamo besedilo `ctrl+alt+b`)
-4. Poiščemo "Build LaTeX Project" in z desnim gumbkom kliknjemo nanj.
+3. V iskalnik vtipkamo neželeno bližnjico (se pravi, natipkamo besedilo `ctrl+alt+b`)
+4. Poiščemo _Build LaTeX Project_ in z desnim gumbkom kliknjemo nanj.
 5. Izberemo "remove keyboard binding".
 
 Sedaj bi moral delati znak `{`. Podobno popravimo ostale znake. Mimogrede, "Build LaTeX project" lahko še vedno dobimo, ker je vezan tudi na bližnjico <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>. Sicer pa lahko sami dodajamo nove bližnjice v spisku vseh bližnjic.

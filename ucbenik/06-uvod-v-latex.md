@@ -1,33 +1,76 @@
 # Uvod v LaTeX
 
-LaTeX je sistem za pripravo dokumentov. Deluje drugače kot Microsoft Word in
-podobni programi.
-V Microsoft Word uporabnik neposredno oblikuje dokument in vidi njegovo 
-končno oblik ("What you see is what you get" - WYISYG).
-V LaTeXu uporabnik pripravi vhodno datoteko `.tex`, ki vsebuje navadno besedilo
-in ukaze za oblikovanje, nato pa datoteko s programom `pdflatex` pretvori v PDF.
+LaTeX je sistem za stavljenje besedila. 
+Je pravzaprav prevajalnik, ki LaTeX datoteko s končnico `.tex`, 
+ki vsebuje navadno besedilo, označeno s posebnimi okolji in ukazi, 
+pretvori v lepo stavljeno besedila in ga shrani v datoteko PDF s končnico `.pdf`.
 
-Prvi način je bolj prijazen večini uporabnikov, ki niso tehnično podkovani in ki
-ne želijo investirati časa v učenje bolj zahtevnega, a tudi bolj kvalitetnega in
-zmogljivega sistema.
+LaTeX-ov prevajalnik (mi bomo uporabljali `pdflatex`) je ponavadi treba pognati večkrat, 
+da lahko preračuna sklice na izreke in številke strani. 
+Uporabnik lahko to stori bodisi sam, bodisi uporabi program `latexmk`, 
+ki požene `pdflatex` in nekatere druge programe v sklopu sistema LaTeX. 
+Če uporabljate Visual Studio Code, se ob shranjevanju avtomatično požene program `latexmk`.
 
-Včasih je treba ukaz `pdflatex` pognati večkrat zapored, da lahko LaTeX
-preračuna sklice na izreke in številke strani. Uporabnik lahko to stori bodisi
-sam, bodisi uporabi program `latexmk`, ki sam po potrebi požene `pdflatex` (in
-tudi ostale programe, v sklopu sistema LaTeX). Če uporabljate Visual Studio
-Code, se ob shranjevanju avtomatično požene program `latexmk`.
+`````{admonition} Programska oprema
+:class: important
+- [LaTeX](namestitev:latex),
+- [Visual Studio Code](namestitev:vscode) in
+- razširitev [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
+`````
 
-## TODO
+## Ukazi in okolja
 
-Definicija novega ukaza z matematičnim načinom ali brez, razloži
+LaTeX dokumente oblikujemo z _ukazi_ (angl. _command_) in _okolji_ (angl. _environment_), 
+kot pri HTML pa lahko uporabljamo tudi _komentarje_.
+Ukazom včasih rečemo tudi makroji (angl. _macro_).
+```tex
+% Okolja so podobna značkam:
+\begin{⟨ime-okolja⟩} % začetek okolja
+  ⟨vsebina⟩          % vsebina
+\end{⟨ime-okolja⟩}   % konec okolja
+
+% Ukazi so bolj enostavni:
+\⟨ime-ukaza⟩
+```
+Nekateri ukazi in okolja sprejmejo tudi dodatne argumente,
+ki so lahko obvezni (v zavitih oklepajih `{}`) ali neobvezni (v oglatih oklepajih `[]`).
+
+* Ukaz `\section{Turingovi stroji}` naredi nov razdelek z naslovom "Turingovi stroji".
+* Ukaz `frac`, ki v matematičnem okolju naredi ulomek, sprejme dva argumenta, 
+  števec in imenovalec: `\frac{22}{7}` izpiše $\frac{22}{7}$.
+* Ukaz `rule` za ločnice, ki nariše pravokotnik, sprejme dva obvezna argumenta in enega neobveznega 
+  (kako visoko v vrstici stoji ločnica):
+  `\rule[⟨višina⟩]{⟨dolžina⟩}{⟨širina⟩}`.
+
+Pri teh vajah boste srečali okolja `abstract`, `verbatim` (oznaka ` ``` ` v Markdown-u), 
+`itemize` in `enumerate` (znački `ul` in `ol` v HTML).
+Tudi za matematični način uporabljamo okolje, in sicer
+`math` za vrstičnega in `displaymath` za prikaznega (tako da izraz stoji v svoji vrstici).
+Ker bi bilo zelo zamudno pisati `\begin{math}1 + 1\end{math}`, ima LaTeX za ti dve okolji posebni okrajšavi:
+
+```
+\[
+  ⟨matematični izraz na sredini vrstice⟩
+\]
+```
+
+ali `\(⟨matematični izraz v vrstici⟩\)`.
+Včasih boste morda videli tudi starejši okrajšavi `$$` za prikazni in `$` za vrstični način.
+Uporabo teh dveh okrajšav močno odsvetujemo - ko boste naleteli na napako, jo boste veliko težje razbrali.
+
+`````{admonition} Ukazi za matematične izraze
+:class: tip
+V matematičnih okoljih lahko uporabljamo ukaze za matematične izraze, 
+kot so `frac` za ulomke, `int` za integrale, ukaze za matrike itd. 
+Ti ukazi delajo **samo v matematičnih okoljih**, izven njih pa sprožijo napako.
+`````
 
 ## Struktura dokumenta
 
 LaTeX dokument shranimo v datoteko s končnico `.tex`. Dokument je lahko shranjen
 tudi v večjih datotekah, ki jih z ukazom `\input{datoteka.tex}` vključimo v
 glavno datoteko.
-
-Struktura glavne LaTeX datoteke je naslednja:
+Struktura glavne LaTeX datoteke je videti takole:
 
 ```tex
 \documentclass[...]{...}
@@ -41,155 +84,112 @@ Struktura glavne LaTeX datoteke je naslednja:
 \end{document}
 ```
 
-Ukaz `\documentclass` določa zvrst dokumenta (članek, knjiga, pismo, ...).
-Ime razreda vpišemov zavite oklepaje, nastavitve v oglate, npr. `\documentclass[a4paper]{article}`.
-Nastavitve lahko tudi opustimo in pišemo samo `\documentclass{...}`.
+Ukaz `\documentclass` določa zvrst dokumenta (članek, knjiga, pismo, ...),
+ki jo določimo v obveznem argumentu, takole: `\documentclass{article}`.
+Možne zvrsti dokumentov so vnaprej definirane in se razlikujejo tudi po oblikovanju.
+Dodatne nastavitve, kot na primer za velikost strani, lahko zapišemo v oglate oklepaje:
+`\documentclass[a4paper]{article}`.
 
-V preambuli v dokument vključimo razne pakete, uredimo nastavitve in definiramo makroje:
+V preambuli v dokument vključimo razne pakete, uredimo nastavitve in definiramo nove makroje in okolja:
 
-* paket vključimo z ukazom `\usepackage[...]{imePaketa}`, kjer v `[...]` podamo razne nastavitve.
-* nastavitve so odvisne od zvrsti dokumenta.
-* makro je okrajšava, ki jo lahko uporabljamo v dokumentu, definiramo ga z
-  `\newcommand{\imeMakroja}....`, o tem se bomo več učili kasneje.
+* paket vključimo z ukazom `\usepackage[⟨nastavitve⟩]{⟨ime-paketa⟩}`.
+* nove ukaze in okolja definiramo ga z ukazoma `newcommand` in `newenvironment`.
 
 LaTeX ima okoli [6000 paketov](https://www.ctan.org). Najbolj uporabni so že vključeni v
 distribucijo LaTeXa, ki ste jo namestili na svojo računalnik.
 
-### Ukazi
+### Ločevanje vsebine in predstavitve
 
-V LaTeXu ukaze pišemo z `\imeUkaza`. Ukazu lahko dodamo tudi argumente, ki jih pišemo v `{...}`, na primer:
-
-* `\section{Turingovi stroji}` naredi nov razdelek z naslovom "Turingovi stroji"
-* `\textbf{....}` oblikuje besedilo v **krepkem** tisku.
-
-Ukaz lahko sprejme tudi več argumentov, na primer `\ukaz{arg₁}{arg₂}...{argᵢ}`,
-poznamo pa tudi neobvezne argumente, ki jih lahko bodisi izpustimo bodisi podamo
-v oglatih oklepajih, na primer `\ukaz[arg₁]{arg₂}`.
-
-### Okolja
-
-Kadar oblikujemo več, kot samo nekaj besed, uporabimo okolje. 
-Srečali ste že okolje `document`, ki vsebuje celotno vsebino dokumenta.
-Okolja ponavadi pišemo takole:
-
-```tex
-\begin{ime-okolja}
-  ⟨vsebina⟩
-\end{ime-okolja}
-```
-
-Pri teh vajah boste srečali okolja `abstract`, `verbatim`, `itemize` in `enumerate`.
-Tudi matematični način (v resnici poznamo dva, vrstičnega in prikaznega) si lahko predstavljate
-kot okolje, za katerega pa uporabljamo okrajšavo:
-
-```
-\[
-  ⟨matematični izraz na sredini vrstice⟩
-\]
-```
-
-ali `\( ⟨matematični izraz v vrstici⟩ \)`.
-
-### Razlika med oblikovnimi in vsebinskimi ukazi
-
-Besedilo lahko oblikujemo na dva načina:
-
-1. **Oblikujemo videz** z ukazi, ki nastavijo velikost in stil pisave, z ukazi
-   za prelom vrstice, vstavljamo zamike ipd.
-2. **Določimo vsebinski pomen** z ukazi, ki nakazujejo *pomen* kosov besedila,
-   na primer ukazi za nov razdelek, podrazdelek, okolje za zapis izreka, okolje
-   za zapis dokaza, itd.
-
-Vsebinsko oblikovanje dokumenta je dosti bolj prijazno uporabniku, sistematično
-in fleksibilno. LaTeX tako oblikovanje zelo dobro podpira.
+Tudi v LaTeX-u bomo v dokumentu **določili vsebinski pomen** elementov besedila:
+z ukazi za nov razdelek, podrazdelek, z okoljem za zapis izreka, itd.
+Taka vrsta oblikovanja je dosti bolj prijazna uporabniku, sistematična
+in prilagodljiva.
 
 Za primer, v LaTeX-u vsebinsko oblikujemo besedilo izreka z okoljem `theorem`.
+Videz izreka bi lahko oblikovali neposredno, kot spodaj, vendar 
+bi bilo potem težje skrbeti za to, da vsi izreki izgledajo enako, 
+da so vsi pravilno oštevilčeni, ipd.
 
 ```tex
+% vsebinsko oblikovanje
 \begin{theorem}
   ⟨besedilo izreka⟩
 \end{theorem}
-```
 
-Če bi neposredno oblikovali videz izreka kot spodaj,
-bi bilo težje skrbeti za to, da vsi izreki izgledajo enako, da so vsi pravilno
-oštevilčeni, ipd.
-
-```tex
+% neposredno oblikovanje
 \textbf{Izrek 1.1} \textit{⟨besedilo izreka⟩}
 ```
 
 Še nekaj primerov vsebinskega oblikovanja so posebni ukazi za vsebino, kot so
-`\section`, `\subsection`, `\footnote`, ...
+`section`, `subsection` in `footnote`.
 
 ### Splošna priporočila za urejanje LaTeX dokumentov
 
 * Za vsak LaTeX dokument imejte datoteke spravljene v imeniku, ki vsebuje
   samo datoteke za ta dokument. Ta imenik potem odprite v urejevalniku
-  Visual Studio Code. Asistenti vam bodo hvaležni (sčasoma pa boste verjetno
+  Visual Studio Code. 
+  Razlog za to je, da LaTeX med prevajanjem naredi množico datotek, 
+  ki so za uporabnika večino časa neuporabne.
+  Asistenti vam bodo hvaležni (sčasoma pa boste verjetno
   hvaležni tudi sami sebi).
 * Napake, ki jih javlja LaTeX, niso vedno razumljive. Med drugim to pomeni, da
   jih je v besedilu težko najti. En način, da si pri tem pomagamo, je ta, da
-  dokument pogosto prevedemo. Tako vemo, da se je napaka pojavila od takrat, ko
+  dokument pogosto prevedemo. 
+  Ni narobe, če datoteko shranite (in s tem prevedete) po vsakem do konca napisanem ukazu.
+  Tako boste vedeli, da se je napaka pojavila od takrat, ko
   je LaTeX nazadnje uspešno prevedel dokument.
+  Pri tem bodite pozorni na to, kaj se dogaja v statusni vrstici.
+  Hitrejši boste z <kbd>Ctrl</kbd>+<kbd>S</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>S</kbd>).
 * Najmanjši dokument, ki vam ga bo LaTeX še smiselno prevedel, mora vsebovati
   ukaz `\documentclass` in okolje `document`. Poglejte si, kakšne napake javi
   LaTeX, če prevajate brez tega: tako jih boste naslednjič prepoznali.
 
-## 1. VSCode in LaTeX
+## 1. naloga: VSCode in LaTeX
 
-Naslednjih nekaj tednov bomo spoznavali [LaTeX](https://www.latex-project.org). Da bo delo
-teklo nemoteno, bomo preverili, ali je vaš urejevalnik pripravljen za delo z njim.
+Najprej preverimo, ali je vaš urejevalnik pripravljen za delo z 
+[LaTeX](https://www.latex-project.org)-om. 
 
-LaTeX je sistem za stavljenje besedila. Je pravzaprav prevajalnik, ki LaTeX datoteko s končnico `.tex`, ki vsebuje navadno besedilo, označeno s posebnimi LaTeX značkami in ukazi, pretvori v lepo stavljeno besedila in ga shrani v datoteko PDF s končnico `.pdf`. A več o tem bomo povedali naslednjič.
-
-VSCode podpira delo z LaTeX. Ko odprete datoteko s končnico `.tex`, se v VSCode vklopi posebni način urejanja LaTeX (spodaj desno). LaTeX lahko poženete kar iz VSCode, prav tako si lahko znotraj VSCode ogledate datoteko PDF, ki jo naredi LaTeX.
-
-Preizkusite, ali VSCode podpira delo z LaTeX:
-
-1. Na svojem disku naredite imenik z imenom `latex-test` (ali kaj podobnega). Ta imenik naj *na operacijskem sistemu Windows ne bo v imeniku Desktop, Downloads, Namizje ali Prenosi.* Prav tako v imenu imenika (ali tistih nad njim) ne sme biti nobenih presledkov in šumnikov.
-2. Odprite imenik `latex-test` v VSCode. Če še niste namestili razširitve [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), to naredite zdaj.
-2. V VSCode naredite novo datoteko, ki jo poimenujte npr. `latex.tex`.
-3. Vanjo prekopirajte vsebino:
-```
-\documentclass{article}
-\begin{document}
-\section*{Pitagorov izrek}
-V pravokotnem trikotniku s katetama $a$ in $b$ ter hipotenuzo $c$ velja
-$$ a^2 + b^2 = c^2 $$
-\end{document}
-```
-4. Preverite, ali ste v načinu LaTeX (spodaj desno). Če niste, glejte navodila za namestitev VSCode in LaTeX.
-5. Poženite ukaz "LaTeX Workshop: Build LaTeX project". Bolj natančno:
-  * Odprete paleto ukazov z bližnjico <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (Windows) ali <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (MacOS) in nikamor ne klikate z miško.
-  * Začnete tipkati ime ukaza `latex wo...` (velike tiskane črke niso pomembne). Pod vnosnim poljem se vam bo odprl seznam ukazov, ki ustrezajo iskanju. S puščico navzdol na tipkovnici se pomaknite navzdol do ustreznega ukaza in stisnite [vnašalko](https://sl.wikipedia.org/wiki/Vnašalka) oz. po angleško tipko [Enter](https://en.wikipedia.org/wiki/Enter_key).
+1. V VSCode odprite imenik s svojim repozitorijem.
+   V njem naredite nov imenik `06-uvod-v-latex`, v tem imeniku še imenik `test`,
+   v njem pa novo datoteko `latex-test.tex`, ki jo odprite.
+2. Preverite, da spodaj desno v statusni vrstici piše LaTeX;
+   če ne, morate verjetno namestiti razširitev LaTeX Workshop.
+3. Preverite, da v imenih imenikov nad to datoteko **ni nobenih šumnikov ali presledkov**.
+   LaTeX je tako star, da to lahko povzroča težave, še posebej na operacijskem sistemu Windows.
+4. V datoteko `latex-test.tex` prekopirajte spodnje navadno besedilo in jo shranite
+   s <kbd>Ctrl</kbd>+<kbd>S</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>S</kbd>).
+   ```
+   \documentclass{article}
+   \begin{document}
+   \section*{Pitagorov izrek}
+   V pravokotnem trikotniku s katetama \(a\) in \(b\) ter hipotenuzo \(c\) velja
+   \[ a^2 + b^2 = c^2 \]
+   \end{document}
+   ```
+5. S paleto ukazov poženite ukaz _LaTeX Workshop: Build LaTeX project_.
+   Poglejte spodaj levo v statusno vrstico.
+   Na desni strani bi moralo pisati _↻ Build_, ko se prevajanje konča, pa bi morali videti kljukico ✓.
+   V nadaljevanju bi za prevajanje moralo zadoščati, da datoteko shranite z bližnjico
+   <kbd>Ctrl</kbd>+<kbd>S</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>S</kbd>).
 6. Oglejte si dobljeni rezultat (datoteka `latex.pdf`).
-7. V urejevalniku spremenite datoteko `latex.tex` tako, da bo na koncu enačbe znak za piko `.`. Lahko dopišete tudi enačbo z izraženo hipotenuzo `c = ...` (poiščite LaTeX ukaz za koren).
-8. Ponovite 4. in 5. korak.
+7. V urejevalniku spremenite datoteko `latex.tex` tako, da bo na koncu enačbe znak za piko `.`. 
+   Lahko dopišete tudi enačbo z izraženo hipotenuzo `c = ...` (poiščite LaTeX ukaz za koren).
+8. Ponovite 5. in 6. korak.
+9. Če ste na operacijskem sistemu Windows in uporabljate slovensko tipkovnico, 
+   si preberite [navodila za pisanje posebnih znakov](faq:vscode-latex-si) (če tega še niste naredili).
 
-[VSCode, LaTeX, Windows in slovenska tipkovnica](faq:vscode-latex-si).
+## 2. naloga: urnik 
 
-## 2. Urnik 
-
-1. Naredite nov imenik, npr. `rp-latex-urnik`.
-2. V ta imenik shranite
-  [uvodno pregledno datoteko](https://ucilnica.fmf.uni-lj.si/pluginfile.php/86539/mod_folder/content/0/1-osnove.tex?forcedownload=1).
-3. V isti imenik shranite tudi
-  [datoteke za nalogo Urnik](https://ucilnica.fmf.uni-lj.si/mod/folder/view.php?id=59982)
-  (najdete jih tudi spodaj, pod razdelkom Uvod v LaTeX).
-4. Besedilo v datoteki
-   [urnik.tex](https://ucilnica.fmf.uni-lj.si/pluginfile.php/127250/mod_folder/content/0/urnik.tex?forcedownload=1)
-   oblikujte v LaTeX-u tako, da bo prevedena PDF datoteka čim bolj podobna
-   [rešitvi](https://ucilnica.fmf.uni-lj.si/pluginfile.php/127250/mod_folder/content/0/urnik-resitev.pdf?forcedownload=1).
+1. V glavnem imeniku repozitorija naredite nov imenik, `latex-pregled` in 
+   v njem odpakirajte arhiv [`latex-pregled.zip`](06-uvod-v-latex/latex-pregled.zip).
+2. V imenik `06-uvod-v-latex` shranite [datoteke za nalogo Urnik](TODO)
+3. Besedilo v datoteki `urnik.tex` oblikujte v LaTeX-u tako, 
+   da bo prevedena PDF datoteka čim bolj podobna rešitvi.
    Pri reševanju si pomagajte z uvodno pregledno datoteko.
-5. Česar ne boste rešili na vajah, rešujte doma.  
 
 V datoteki `urnik.tex` je vsebina že označena z okoljem `document`, vrsta
 dokumenta pa je že nastavljena na `article`. 
-Pri naslednjih nalogah vam bo prišla prav paleta ukazov, ki jo ponuja VSCode.
-Do nje dostopate z bližnjico `Ctrl+Shift+P` oz. `Cmd+Shift+P`.
-V vnosno polje vpišite `latex surround`. Med rezultati boste našli dva ukaza.
-S tipkami gor/dol in tipko `Enter` izberite pravega.
+V paleti ukazov boste pod `latex surround` našli dva uporabna ukaza:
 
 * _LaTeX Workshop: Surround selection with LaTeX command_, 
   ki izbrano besedilo obda z ukazom, `\ukaz{izbrano besedilo}`. 
@@ -231,11 +231,12 @@ bližnjice poiščite v [plonkcu](bliznjice:vscode).
 
 7.  V besedilu je definiranih nekaj novih pojmov. Zapisani so med poševnima
     črtama. Da bodo prikazani ležeče, uporabi ukaz `\emph`. Pomagaj si z orodjem
-    *Replace* in regularnimi izrazi. V polju za iskanje (odpremo ga z `Ctrl/Cmd + F`) 
+    *Replace* in regularnimi izrazi. V polju za iskanje 
+    (odpremo ga z <kbd>Ctrl</kbd> + <kbd>F</kbd> oz. 🍎 <kbd>Cmd</kbd> + <kbd>F</kbd>) 
     izberemo možnost za iskanje z regularnimi izrazi (gumb z napisom `.*`). 
     Vpišite vzorec `/(.*)/`, ki pomeni, da iščemo nize znakov (`(.*)`) obdane z dvema poševnicama. 
     Za zamenjavo vpišemo `\emph{$1}`: niz `$1` se bo zamenjal s tistim, kar je prej stalo med
-    narekovaji.
+    poševnicami.
     
 8.  Kjer v besedilu najdeš dva vprašaja, ju nadomesti z ustreznim matematičnim
     izrazom. Nadomesti prvi izraz, ostale pa na koncu, če ostane čas. *Pozor:*
@@ -243,7 +244,6 @@ bližnjice poiščite v [plonkcu](bliznjice:vscode).
     ste videli, kako se to naredi). Piko za množenje dobiš z ukazom `\cdot`.
     Kadar je potrebno del besedila zapisati v matematičnem okolju, uporabi ukaz
     `\text` iz paketa `amsmath`.
-    Na predavanjih ste izvedeli, da sta oba matematična 
     
 9.  Odstavki, ki sledijo seznamom in postopkom, nimajo zamaknjene prve vrstice.
     To dosežeš z ukazom `\noindent` na začetku odstavka.
@@ -251,7 +251,7 @@ bližnjice poiščite v [plonkcu](bliznjice:vscode).
 10. V besedilu je *16* vezajev in pomišljajev. Pomišljaje napravi daljše
     (širše), vezaje pa pusti takšne kot so. Pomišljaje prepoznate po tem, da so
     obdani s presledkoma: ` - `. Popravite lahko vse naenkrat s pomočjo iskanja
-    in zamenjave (`Ctrl/Cmd + F`). Pomišljaj napišemo z dvema črticama med dvema
+    in zamenjave. Pomišljaj napišemo z dvema črticama med dvema
     presledkoma: ` -- `.
     
 11. Na dveh mestih je del besedila zapisan v dvojnih narekovajih. Poskrbi, da
@@ -269,12 +269,17 @@ bližnjice poiščite v [plonkcu](bliznjice:vscode).
 13. Pred podrazdelkom Omejitve morajo biti tri besede (`bool`, `true`, `false`)
     zapisane v drugačni pisavi (kot bile natipkane s pisalnim strojem).
     
-14. Poskrbi, da presledki za pikami, ki ne pomenijo konec stavka, ne bodo
+14. Poskrbite, da presledki za pikami, ki ne pomenijo konca stavka, ne bodo
     preveliki. Taki so na primer presledki v datumu ter za kraticami npr. in
     t.i.
     Pomagate si lahko z iskanjem in zamenjavo z regularnimi izrazi.
     Pazite, da boste vključili tudi razlikovanje velikih in malih črk (gumb `Aa`).
     Kaj naredi vzorec `\. ([a-z])`?
 
-15. Če tega nisi naredil prej, je sedaj čas, da zamenjaš vse `??` s
+15. Če tega niste naredili prej, je sedaj čas, da zamenjate vse `??` s
     pripadajočimi matematičnimi izrazi.
+
+
+## Domača naloga
+
+1. Dokončajte vaje, če jih še niste.
