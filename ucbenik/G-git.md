@@ -59,19 +59,22 @@ S tem ukazu se na našem računalniku ustvari popoln klon repozitorija na strež
 ## Datoteka `.gitignore`
 
 V datoteko `.gitignore` naštejemo vse datoteke, ki jim v Gitu ne želimo slediti.
-Dober primer tega so datoteke, ki jih računalnik ustvari sam:
+Dober primer tega so datoteke, specifične za naš računalnik, varnostno občutljive datoteke in datoteke, 
+ki jih računalnik ustvari sam (in jih zato lahko ustvarimo na novo):
 
 - MacOS rad ustvarja datoteke `.DS_Store` in direktorije `__MACOSX`,
 - Windowsi ustvarjajo datoteke `thumbs.db`,
 - Python (ki ga boste srečali pri Uvodu v programiranje) ustvari množico datotek v imeniku `__pycache__`, 
 - LaTeX ustvari PDF datoteke ter pomožne datoteke s končnicami `.aux`, `.log` in podobno). 
 
+S tem, ko take datoteke izključimo, poskribmo, da repozitorij ostane čist, pregleden in lažji za delo.
 Primer ustrezne datoteke `.gitignore` bi bil:
 
-```
-__pycache__
-.DS_Store
-thumbs.db
+```sh
+# VSCode uporabniške nastavitve
+.vscode/
+
+# LaTeX
 *.aux
 *.bbl
 *.blg
@@ -83,6 +86,16 @@ thumbs.db
 *.pdf
 *.pyc
 *.synctex.gz
+
+# MacOS
+__MACOSX
+.DS_Store
+
+# Windows
+thumbs.db
+
+# Python
+__pycache__
 ```
 
 (git:nastavitve)=
