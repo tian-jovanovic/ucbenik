@@ -103,7 +103,7 @@ Tu omenjamo samo nekaj najbolj uporabnih bližnjic za tipkovnico. Več si lahko 
 | Skok na začetek vrstice                  | <kbd>Home</kbd>                               | <kbd>Cmd</kbd>+<kbd>←</kbd>                      |
 | Skok na konec vrstice                    | <kbd>End</kbd>                                | <kbd>Cmd</kbd>+<kbd>→</kbd>                      |
 | Izberi trenutno vrstico                  |                                               | <kbd>Cmd</kbd>+<kbd>L</kbd>                      |
-| Izbriši trenutno vrstico                 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>     |
+| Izbriši trenutno vrstico                 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>     |
 | Zamakni vrstico                          |                                               | <kbd>Cmd</kbd>+<kbd>]</kbd>                      |
 | Zamakni vrstico nazaj                    |                                               | <kbd>Cmd</kbd>+<kbd>[</kbd>                      |
 | Skok na začetek dokumenta                | <kbd>Ctrl</kbd>+<kbd>Home</kbd>               | <kbd>Cmd</kbd>+<kbd>↑</kbd>                      |
