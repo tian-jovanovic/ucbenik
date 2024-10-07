@@ -128,6 +128,12 @@ Taka imena je treba postaviti med znaka `"`, na primer: `"To je dolgo ime z veli
 4. V ukazno vrstico kopirajte spodnji ukaz in pritisnite vnašalko <kbd>↵</kbd> (angl. _enter_ ali _return_). 
    - `cd "Vhodna dvorana/Dolgočasna pravokotna dvorana/Radegastov kot/Zahodno križišče"`
 
+`````{admonition} Nasvet za operacijski sistem Windows
+:class: tip
+Preverite, ali za kopiranje in lepljenje v programu Git Bash delujeta običajni bližnjici.
+Če ne, bosta morda delovali <kbd>Ctrl</kbd>+<kbd>Ins</kbd> in <kbd>Shift</kbd>+<kbd>Ins</kbd>.
+`````
+
 <!-- Dodatno za Windows Powershell (staro)
 $OutputEncoding = [System.Console]::OutputEncoding =[System.Console]::InputEncoding = [System.Text.Encoding]::UTF8 
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
