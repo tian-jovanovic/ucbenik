@@ -108,6 +108,6 @@ Preverite, kje ste: natipkajte `pwd` (skupaj s pozivom bo videti kot `$ pwd`) in
 
 ### MacOS
 
-v meniju izberite  `Service > New Terminal at Folder`. Odprlo se bo novo okno z ukazno vrstico.  
+V meniju izberite  `Service > New Terminal at Folder`. Odprlo se bo novo okno z ukazno vrstico.
 Zadnja vrstica v oknu bi morala biti oblike `uporabnisko_ime@ime_racunalnika rudnik  %`.
-Za znakom `%` stuji tudi kurzor (angl. *cursor*).
+Za znakom `%` stoji tudi kurzor (angl. *cursor*).
