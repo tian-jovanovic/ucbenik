@@ -147,7 +147,7 @@ program `pwd` pa ne potrebuje parametrov.
 
 V zgodbi so navodila in namigi za posamezni odsek podani ležeče.
 Z branjem nadaljujte šele, ko opravite vse, kar piše.
-Sedaj lahko sledite navodilam v PDF datoteki. 
+Sedaj lahko sledite navodilom v PDF datoteki.
 Veliko zabave in pazite na glavo, stropi so nizki!
 
 ## Domača naloga
@@ -163,10 +163,10 @@ Veliko zabave in pazite na glavo, stropi so nizki!
    pri čemer upoštevajte še naslednje:
     - predlagamo, da repozitorij poimenujete `racunalniski-praktikum`,
     - repozitorij naj bo _Public_ (zato, da bomo lahko pregledali vaše oddane domače naloge),
-    - v razdelku _Commit your first change_, točka 3., popravite prvo vrstico tako, da bo pisalo `# Računalniški praktikum`,
+    - v razdelku _Commit your first change_, točka 3, popravite prvo vrstico tako, da bo pisalo `# Računalniški praktikum`,
     - v vrstico spodaj napišite bližnjice iz prve točke te naloge (skupaj z opisom).
-    - v istem razdelku pod točko 7. napišite na primer `dopolni README` (in se ne ukvarjajte z dodajanjem avtorjev),
-    - še vedno v razdelku _Commit your first change_, točka 8., izberite _Commit directly to the main branch_,
+    - v istem razdelku pod točko 7 napišite na primer `dopolni README` (in se ne ukvarjajte z dodajanjem avtorjev),
+    - še vedno v razdelku _Commit your first change_, točka 8, izberite _Commit directly to the main branch_,
     - navodilom sledite samo do razdelka _Next steps_.
 5. Na [učilnici](https://ucilnica.fmf.uni-lj.si/mod/assign/view.php?id=70431) oddajte naslov repozitorija: `https://github.com/⟨uporabnisko-ime⟩/⟨ime repozitorija⟩`.
    Pred oddajo preverite, da je naslov pravi (sicer ne boste dobili točk).
