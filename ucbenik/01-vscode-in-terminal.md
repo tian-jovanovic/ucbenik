@@ -128,6 +128,12 @@ Taka imena je treba postaviti med znaka `"`, na primer: `"To je dolgo ime z veli
 4. V ukazno vrstico kopirajte spodnji ukaz in pritisnite vnašalko <kbd>↵</kbd> (angl. _enter_ ali _return_). 
    - `cd "Vhodna dvorana/Dolgočasna pravokotna dvorana/Radegastov kot/Zahodno križišče"`
 
+`````{admonition} Nasvet za operacijski sistem Windows
+:class: tip
+Preverite, ali za kopiranje in lepljenje v programu Git Bash delujeta običajni bližnjici.
+Če ne, bosta morda delovali <kbd>Ctrl</kbd>+<kbd>Ins</kbd> in <kbd>Shift</kbd>+<kbd>Ins</kbd>.
+`````
+
 <!-- Dodatno za Windows Powershell (staro)
 $OutputEncoding = [System.Console]::OutputEncoding =[System.Console]::InputEncoding = [System.Text.Encoding]::UTF8 
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
@@ -141,7 +147,7 @@ program `pwd` pa ne potrebuje parametrov.
 
 V zgodbi so navodila in namigi za posamezni odsek podani ležeče.
 Z branjem nadaljujte šele, ko opravite vse, kar piše.
-Sedaj lahko sledite navodilam v PDF datoteki. 
+Sedaj lahko sledite navodilom v PDF datoteki.
 Veliko zabave in pazite na glavo, stropi so nizki!
 
 ## Domača naloga
@@ -157,10 +163,10 @@ Veliko zabave in pazite na glavo, stropi so nizki!
    pri čemer upoštevajte še naslednje:
     - predlagamo, da repozitorij poimenujete `racunalniski-praktikum`,
     - repozitorij naj bo _Public_ (zato, da bomo lahko pregledali vaše oddane domače naloge),
-    - v razdelku _Commit your first change_, točka 3., popravite prvo vrstico tako, da bo pisalo `# Računalniški praktikum`,
+    - v razdelku _Commit your first change_, točka 3, popravite prvo vrstico tako, da bo pisalo `# Računalniški praktikum`,
     - v vrstico spodaj napišite bližnjice iz prve točke te naloge (skupaj z opisom).
-    - v istem razdelku pod točko 7. napišite na primer `dopolni README` (in se ne ukvarjajte z dodajanjem avtorjev),
-    - še vedno v razdelku _Commit your first change_, točka 8., izberite _Commit directly to the main branch_,
+    - v istem razdelku pod točko 7 napišite na primer `dopolni README` (in se ne ukvarjajte z dodajanjem avtorjev),
+    - še vedno v razdelku _Commit your first change_, točka 8, izberite _Commit directly to the main branch_,
     - navodilom sledite samo do razdelka _Next steps_.
 5. Na [učilnici](https://ucilnica.fmf.uni-lj.si/mod/assign/view.php?id=70431) oddajte naslov repozitorija: `https://github.com/⟨uporabnisko-ime⟩/⟨ime repozitorija⟩`.
    Pred oddajo preverite, da je naslov pravi (sicer ne boste dobili točk).

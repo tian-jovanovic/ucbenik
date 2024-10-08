@@ -106,14 +106,14 @@ Do njih lahko dostopate z bližnjico <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd
 | Skok na začetek vrstice        | <kbd>Home</kbd>                                           | <kbd>Cmd</kbd>+<kbd>←</kbd>                      |
 | Skok na konec vrstice          | <kbd>End</kbd>                                            | <kbd>Cmd</kbd>+<kbd>→</kbd>                      |
 | Izberi trenutno vrstico        |                                                           | <kbd>Cmd</kbd>+<kbd>L</kbd>                      |
-| Izbriši trenutno vrstico       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>             | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>     |
+| Izbriši trenutno vrstico       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>             | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>     |
 | Zamakni vrstico                |                                                           | <kbd>Cmd</kbd>+<kbd>]</kbd>                      |
 | Zamakni vrstico nazaj          |                                                           | <kbd>Cmd</kbd>+<kbd>[</kbd>                      |
 | Skok na začetek dokumenta      | <kbd>Ctrl</kbd>+<kbd>Home</kbd>                           | <kbd>Cmd</kbd>+<kbd>↑</kbd>                      |
 | Skok na konec dokumenta        | <kbd>Ctrl</kbd>+<kbd>End</kbd>                            | <kbd>Cmd</kbd>+<kbd>↓</kbd>                      |
 | Ustvari novo datoteko          | <kbd>Ctrl</kbd>+<kbd>N</kbd>                              | <kbd>Cmd</kbd>+<kbd>N</kbd>                      |
 | Odpiranje datoteke             | <kbd>Ctrl</kbd>+<kbd>O</kbd>                              | <kbd>Cmd</kbd>+<kbd>O</kbd>                      |
-| Odpiranje imenika              | <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>K</kbd> | <kbd>Cmd</kbd>+<kbd>O</kbd>                      |
+| Odpiranje imenika              | <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>O</kbd> | <kbd>Cmd</kbd>+<kbd>O</kbd>                      |
 | Odpri predogled <sup>2</sup>   | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>             | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>     |
 
 <sup>2</sup> Predogled lahko odprete tudi tako, da desno kliknete na ime datoteke in izberete "Open Preview", ampak to ni učinkovita raba tipkovnice.
