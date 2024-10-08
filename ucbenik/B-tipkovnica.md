@@ -91,26 +91,30 @@ Marsikatera od teh bližnjice deluje tudi drugih programih, ki imajo zavihke.
 
 Tu omenjamo samo nekaj najbolj uporabnih bližnjic za tipkovnico. Več si lahko preberete v dokumentaciji urejevalnika, kjer je tudi [seznam vseh privzetih bližnjic](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts) (prikažejo se bližnjice za vaš operacijski sistem). Nekoliko skrčen seznam se da videti tudi v preglednicah za [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) in [MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf).
 
+V VSCode si lahko pogledate vse bližnjice na vašem računalniku v nastavitvah za bližnjice. 
+Do njih lahko dostopate z bližnjico <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd> (🍎 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd>).
+
 (bliznjice:vscode-splosne)=
 ### Splošne bližnjice
 
-|                                          | Windows                                       |  MacOS                                           |
-|:-----------------------------------------|:---------------------------------------------:|:------------------------------------------------:|
-| Paleta ukazov                            | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>     |
-| Premikanje vzdolž cele besede            | <kbd>Ctrl</kbd>+<kbd>←→</kbd>                 | <kbd>Option</kbd>+<kbd>←→</kbd>                  |
-| Premikanje vrstice gor ali dol           | <kbd>Alt</kbd>+<kbd>↑↓</kbd>                  | <kbd>Option</kbd>+<kbd>↑↓</kbd>                  |
-| Podvajanje vrstice gor ali dol           | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>↑↓</kbd> | <kbd>Option</kbd>+<kbd>Shift</kbd>+<kbd>↑↓</kbd> |
-| Skok na začetek vrstice                  | <kbd>Home</kbd>                               | <kbd>Cmd</kbd>+<kbd>←</kbd>                      |
-| Skok na konec vrstice                    | <kbd>End</kbd>                                | <kbd>Cmd</kbd>+<kbd>→</kbd>                      |
-| Izberi trenutno vrstico                  |                                               | <kbd>Cmd</kbd>+<kbd>L</kbd>                      |
-| Izbriši trenutno vrstico                 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd> | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>     |
-| Zamakni vrstico                          |                                               | <kbd>Cmd</kbd>+<kbd>]</kbd>                      |
-| Zamakni vrstico nazaj                    |                                               | <kbd>Cmd</kbd>+<kbd>[</kbd>                      |
-| Skok na začetek dokumenta                | <kbd>Ctrl</kbd>+<kbd>Home</kbd>               | <kbd>Cmd</kbd>+<kbd>↑</kbd>                      |
-| Skok na konec dokumenta                  | <kbd>Ctrl</kbd>+<kbd>End</kbd>                | <kbd>Cmd</kbd>+<kbd>↓</kbd>                      |
-| Ustvari novo datoteko                    | <kbd>Ctrl</kbd>+<kbd>N</kbd>                  | <kbd>Cmd</kbd>+<kbd>N</kbd>                      |
-| Odpiranje datoteke/imenika               | <kbd>Ctrl</kbd>+<kbd>O</kbd>                  | <kbd>Cmd</kbd>+<kbd>O</kbd>                      |
-| Odpri predogled <sup>2</sup>             | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>     |
+|                                | Windows                                                   |  MacOS                                           |
+|:-------------------------------|:---------------------------------------------------------:|:------------------------------------------------:|
+| Paleta ukazov                  | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>             | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>     |
+| Premikanje vzdolž cele besede  | <kbd>Ctrl</kbd>+<kbd>←→</kbd>                             | <kbd>Option</kbd>+<kbd>←→</kbd>                  |
+| Premikanje vrstice gor ali dol | <kbd>Alt</kbd>+<kbd>↑↓</kbd>                              | <kbd>Option</kbd>+<kbd>↑↓</kbd>                  |
+| Podvajanje vrstice gor ali dol | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>↑↓</kbd>             | <kbd>Option</kbd>+<kbd>Shift</kbd>+<kbd>↑↓</kbd> |
+| Skok na začetek vrstice        | <kbd>Home</kbd>                                           | <kbd>Cmd</kbd>+<kbd>←</kbd>                      |
+| Skok na konec vrstice          | <kbd>End</kbd>                                            | <kbd>Cmd</kbd>+<kbd>→</kbd>                      |
+| Izberi trenutno vrstico        |                                                           | <kbd>Cmd</kbd>+<kbd>L</kbd>                      |
+| Izbriši trenutno vrstico       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>             | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>     |
+| Zamakni vrstico                |                                                           | <kbd>Cmd</kbd>+<kbd>]</kbd>                      |
+| Zamakni vrstico nazaj          |                                                           | <kbd>Cmd</kbd>+<kbd>[</kbd>                      |
+| Skok na začetek dokumenta      | <kbd>Ctrl</kbd>+<kbd>Home</kbd>                           | <kbd>Cmd</kbd>+<kbd>↑</kbd>                      |
+| Skok na konec dokumenta        | <kbd>Ctrl</kbd>+<kbd>End</kbd>                            | <kbd>Cmd</kbd>+<kbd>↓</kbd>                      |
+| Ustvari novo datoteko          | <kbd>Ctrl</kbd>+<kbd>N</kbd>                              | <kbd>Cmd</kbd>+<kbd>N</kbd>                      |
+| Odpiranje datoteke             | <kbd>Ctrl</kbd>+<kbd>O</kbd>                              | <kbd>Cmd</kbd>+<kbd>O</kbd>                      |
+| Odpiranje imenika              | <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>K</kbd> | <kbd>Cmd</kbd>+<kbd>O</kbd>                      |
+| Odpri predogled <sup>2</sup>   | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>             | <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>     |
 
 <sup>2</sup> Predogled lahko odprete tudi tako, da desno kliknete na ime datoteke in izberete "Open Preview", ampak to ni učinkovita raba tipkovnice.
 
