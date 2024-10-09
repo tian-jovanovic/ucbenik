@@ -34,7 +34,13 @@ Kazalca postavite na črki <kbd>F</kbd> in <kbd>J</kbd>. Ti dve tipki sta na tip
    - Na spletnih straneh [Typing Tutor](https://www.typingtutor-online.com), [Type Fu](https://type-fu.com) in [Typing Club](https://www.edclub.com/sportal/program-3.game) najdete vaje za manjši izbor postavitev tipkovnic v več jezikih.
    - Vaje tipkanja, ki so neodvisne od postavitve tipkovnice, najdete na [Keybr.com](https://www.keybr.com). 
    Na tej spletni strani vam ne pomagajo s sliko tipkovnice.
-  
+
+Petnajst minut vaje je seveda premalo, da bi se naučili desetprstnega tipkanja.
+Če se želite naučiti, bo najlažje, če si vzamete vsak dan četrt ure za vedno težje vaje,
+Po kakih 10 urah vaje bi vaši prsti že morali biti dovolj seznanjeni s tipkami, 
+da boste lahko počasi tipkali desetprstno.
+Ob rednih vajah boste tekoče tipkali do konca semestra.
+
 `````{admonition} Nasvet za operacijski sistem MacOS
 :class: tip
 Za tipkanje redkejših znakov si pomagajte s programom [Keyboard Viewer](https://support.apple.com/en-gb/guide/mac-help/mchlp1015/mac),
