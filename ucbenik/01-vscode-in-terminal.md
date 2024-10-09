@@ -36,7 +36,7 @@ Kazalca postavite na črki <kbd>F</kbd> in <kbd>J</kbd>. Ti dve tipki sta na tip
    Na tej spletni strani vam ne pomagajo s sliko tipkovnice.
 
 Petnajst minut vaje je seveda premalo, da bi se naučili desetprstnega tipkanja.
-Če se želite naučiti, bo najlažje, če si vzamete vsak dan četrt ure za vedno težje vaje,
+Če se želite naučiti, bo najlažje, če si vzamete vsak dan četrt ure za vedno težje vaje.
 Po kakih 10 urah vaje bi vaši prsti že morali biti dovolj seznanjeni s tipkami, 
 da boste lahko počasi tipkali desetprstno.
 Ob rednih vajah boste tekoče tipkali do konca semestra.
