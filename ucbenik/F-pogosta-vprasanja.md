@@ -84,7 +84,7 @@ Težava je v tem, da ima VSCode definirane bližnjice (angl. _keyboard shortcut_
 Težavo odpravimo tako, da v spisku bližnjic odstranimo povezavo <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd> (in ostale neželene bližnjice), takole:
 
 1. Odpremo datoteko LaTeX, da se aktivira LaTeX paket.
-2. <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>K</kbd>, prikaže se spisek vseh bližnjic.
+2. <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>S</kbd>, prikaže se spisek vseh bližnjic.
 3. V iskalnik vtipkamo neželeno bližnjico (se pravi, natipkamo besedilo `ctrl+alt+b`)
 4. Poiščemo _Build LaTeX Project_ in z desnim gumbkom kliknjemo nanj.
 5. Izberemo "remove keyboard binding".
