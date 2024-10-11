@@ -170,7 +170,7 @@ Veliko zabave in pazite na glavo, stropi so nizki!
     - predlagamo, da repozitorij poimenujete `racunalniski-praktikum`,
     - repozitorij naj bo _Public_ (zato, da bomo lahko pregledali vaše oddane domače naloge),
     - v razdelku _Commit your first change_, točka 3, popravite prvo vrstico tako, da bo pisalo `# Računalniški praktikum`,
-    - v vrstico spodaj napišite bližnjice iz prve točke te naloge (skupaj z opisom).
+    - v vrstico spodaj napišite bližnjice iz prve točke te naloge (skupaj z opisom),
     - v istem razdelku pod točko 7 napišite na primer `dopolni README` (in se ne ukvarjajte z dodajanjem avtorjev),
     - še vedno v razdelku _Commit your first change_, točka 8, izberite _Commit directly to the main branch_,
     - navodilom sledite samo do razdelka _Next steps_.
@@ -184,7 +184,7 @@ Točka za domačo nalogo se vam bo upoštevala, če boste oddali naslov javnega 
 z datoteko `README.md`, v kateri v prvi vrstici piše `# Računalniški praktikum`.
 Prva sprememba (oz. _commit_) v tem repozitoriju mora biti med 
 torkom, 1. oktobra 2024, ob 00:00 in
-torkom, 22 oktobra 2024, ob 23:55.
+torkom, 22. oktobra 2024, ob 23:55.
 Za vse nadaljnje domače naloge bomo predpostavljali, da uporabljate ta repozitorij.
 
 Toplo priporočamo še naslednje naloge:
