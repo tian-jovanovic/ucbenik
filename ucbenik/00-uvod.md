@@ -16,7 +16,7 @@ dlje časa. Najbolje, kar lahko naredite, je, da tem nasvetom sledite tudi, ko n
 
 ## Zahvale
 
-Učbenik črpa tudi iz gradiv iz prejšnjih let: iz zapiskov za predavanja, ki jih je pripravil Andrej Bauer in iz vaj, ki jih je pripravil Matjaž Zaveršnik.
+Učbenik črpa tudi iz gradiv iz prejšnjih let: iz zapiskov za predavanja, ki jih je pripravil Andrej Bauer, in iz vaj, ki jih je pripravil Matjaž Zaveršnik.
 Pripombe in dopolnitve k vajam so prispevali tudi demonstratorji:
 
 - Maja Abraham,

@@ -128,7 +128,7 @@ Pomaga vam dopolniti ukaz: to še posebej pride prav pri dolgih imenih, ki vsebu
 Taka imena je treba postaviti med znaka `"`, na primer: `"To je dolgo ime z veliko presledki"`.
 
 1. Na računalnik naložite arhiv za svoj operacijski sistem: [`skrati-windows.zip`](01-vscode-in-terminal/skrati-windows.zip)
-   ali [`skrati-macosx.zip`](01-vscode-in-terminal/skrati-macosx.zip) (ta bo pravi tudi za Linux) in ga [odpakirajte](faq:zip)
+   ali [`skrati-macosx.zip`](01-vscode-in-terminal/skrati-macosx.zip) (ta bo pravi tudi za Linux) in ga [odpakirajte](faq:zip).
 2. Na računalnik shranite tudi PDF datoteko [`skrati.pdf`](01-vscode-in-terminal/skrati.pdf) in jo odprite.
 3. [Odprite imenik `rudnik` v ukazni vrstici](faq:ukazna-imenik).
 4. V ukazno vrstico kopirajte spodnji ukaz in pritisnite vnašalko <kbd>↵</kbd> (angl. _enter_ ali _return_). 
