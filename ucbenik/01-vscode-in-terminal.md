@@ -88,7 +88,7 @@ Hitri programerji ne uporabljajo miške, ker jih le-ta upočasni. Pomembno je, d
 uporabljati bližnjice v vseh programih, ki jih uporabljate pogosto. 
 Veliko bližnjic se da uporabiti z eno roko. Npr. desničarji lahko z levo roko uporabite bližnjico <kbd>Alt</kbd>+<kbd>Tab</kbd> (<kbd>Cmd</kbd>+<kbd>Tab</kbd> na MacOS) za preklapljanje med okni, medtem ko imate desno roko na miški.
 
-To vajo rešujte skupaj z asistentko/om ali demonstratorko/om, ki pa vam ne sme pomagati pri iskanju bližnjic (lahko si pomagate med sabo).
+To vajo rešujte skupaj z asistentko/om ali demonstratorko/jem, ki pa vam ne sme pomagati pri iskanju bližnjic (lahko si pomagate med sabo).
 Najprej preberite spodnja pravila in se pripravite na izvajanje naloge. 
 Vnaprej poiščite potrebno dokumentacijo (na primer, kako se v VSCode besedilo z bližnjico spremeni v same velike
 črke?), da ne boste brskali kasneje.
