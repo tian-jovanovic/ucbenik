@@ -41,7 +41,7 @@ Datoteko, ki jo boste pripravili, boste potrebovali za domačo nalogo.
 2. Datoteko shranite z bližnjico <kbd>Ctrl</kbd>+<kbd>S</kbd> (🍎 <kbd>Cmd</kbd>+<kbd>S</kbd>). 
    Odprlo se bo pogovorno okno z aktivnim vnosnim poljem, v katerega že takoj lahko začnete pisati ime datoteke; poimenujte jo `README.md`.
    S pritiskom na vnašalko <kbd>↵</kbd> potrdite ime.
-3. Poiščite kje v statusni vrstici piše, kakšne vrste datoteko urejate.
+3. Poiščite, kje v statusni vrstici piše, kakšne vrste datoteko urejate.
 4. Odprite [predogled](bliznjice:vscode-splosne). Zavihek s predogledom z miško povlecite proti desnemu zgornjemu kotu okna urejevalnika,
    da preklopite v pogled, v katerem boste videli datoteko in predogled hkrati (če vam ni všeč, zavihek prestavite nazaj).
 5. Kopirajte in prilepite spodnje besedilo v datoteko `README.md`.
