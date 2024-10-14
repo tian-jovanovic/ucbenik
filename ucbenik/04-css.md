@@ -104,11 +104,11 @@ Dodatni viri:
 
 ### Merske enote
 
-Velikosti in razdalje na spletnih straneh podajamo bodisi z absolutnimi enotami, bodisi z relativnimi enotami.
-Primera:
+Velikosti in razdalje na spletnih straneh podajamo bodisi z absolutnimi enotami bodisi z relativnimi enotami.
+Primeri:
 
 * [točke na zaslonu](https://en.wikipedia.org/wiki/Pixel):`200px` pomeni točno 200 točk na zaslonu.
-* enota [em](https://en.wikipedia.org/wiki/Em_(typography)): `2em` pomeni 2-krat velikost pisave: _v primeru določanja velikosti pisave_ glede na velikost pisave na enem nivoju višje (če pa ta ni določena, pa glede na privzeto velikost pisave v brskalniku), _v primeru določanje širine elementa_ pa glede na velikost pisave v elementu.
+* Enota [em](https://en.wikipedia.org/wiki/Em_(typography)): `2em` pomeni 2-krat velikost pisave: _v primeru določanja velikosti pisave_ glede na velikost pisave na enem nivoju višje (če pa ta ni določena, pa glede na privzeto velikost pisave v brskalniku), _v primeru določanje širine elementa_ pa glede na velikost pisave v elementu.
 * Še ena relativna enota, ki se pogosto uporablja, je `%`. Pri pisavah se obnaša podobno kot `em` (`200%` je enako kot `2em`). V primeru določanje širine elementa se računa glede na širino elementa na enem nivoju višje.
 
 Več o tem boste izvedeli tudi pri posameznih nalogah in v dodatnih virih:
@@ -125,14 +125,14 @@ Bližnjice so:
 - Windows: <kbd>Ctrl</kbd>+<kbd>R</kbd> ali <kbd>F5</kbd>,
 - MacOS: <kbd>Cmd</kbd>+<kbd>R</kbd>.
 
-CSS datoteke v brskalniku pogosto pristanejo v v predpomnilniku (angl. _cache_), kar pomeni,
+CSS datoteke v brskalniku pogosto pristanejo v predpomnilniku (angl. _cache_), kar pomeni,
 da se ne naložijo na novo ob vsakem osveževanju strani. 
 Brskalnik lahko prisilimo, da jih osveži, s t.i. _hard refresh_.
 Bližnjice so:
 
 - Windows: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>,
-- MacOS (Chrome, Firefox): <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>
-- MacOS (Safari): <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>E</kbd> (oz. **Develop** > **Empty Caches**)
+- MacOS (Chrome, Firefox): <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>,
+- MacOS (Safari): <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>E</kbd> (oz. **Develop** > **Empty Caches**).
 
 ## 1. naloga: dodajanje pravil za oblikovanje v dokument
 
@@ -237,7 +237,7 @@ boste skoraj gotovo rešitev našli na spletu.
    da dobite občutek, kako bodo izgledale naloge na izpitu.
    Na pravem izpitu bo morda naloga nekoliko težja, ker boste že več znali.
    Nalogo poskusite rešiti v največ pol ure.
-2. Vseh tri datoteke (`avatar.jpg`, `dokument.html` in `oblikovanje.css`) 
+2. Vse tri datoteke (`avatar.jpg`, `dokument.html` in `oblikovanje.css`) 
    stisnite v arhiv z imenom `⟨ime⟩-⟨priimek⟩.zip` 
    (ustrezno popravite; če imate v imenu ali priimku kak presledek, ga nadomestite z vezajem `-`) in ga 
    [oddajte na učilnico do ponedeljka, 11. novembra 2024, ob 23:55](https://ucilnica.fmf.uni-lj.si/mod/assign/view.php?id=70566).
