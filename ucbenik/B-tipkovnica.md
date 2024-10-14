@@ -133,7 +133,7 @@ Tipko <kbd>Esc</kbd> lahko služi za:
 
 |                                          | Windows                                       |  MacOS                                           |
 |:-----------------------------------------|:---------------------------------------------:|:------------------------------------------------:|
-| Dodaj kurzor na mestu klika              | <kbd>Alt</kbd> + desni klik                   | <kbd>Option</kbd> + desni klik                   |
+| Dodaj kurzor na mestu klika              | <kbd>Alt</kbd> + levi klik                    | <kbd>Option</kbd> + levi  klik                   |
 | Dodaj kurzor zgoraj/spodaj               | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>↑↓</kbd>  | <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>↑↓</kbd>   |
 | Dodajanje kurzorja v iskanju<sup>1</sup> | <kbd>Ctrl</kbd>+<kbd>D</kbd>                  | <kbd>Cmd</kbd>+<kbd>D</kbd>                      |
 | Dodaj kurzor pri vseh rezultatih iskanja | <kbd>Alt</kbd>+<kbd>↵</kbd>                   | <kbd>Option</kbd>+<kbd>↵</kbd>                   |
