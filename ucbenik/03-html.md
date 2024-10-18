@@ -197,7 +197,7 @@ Primer uporabe ukaza je opisan v točki 3.
 
 VSCode vam dovoli uporabljati [več kurzorjev hkrati](bliznjice:kurzorji), kar se da lepo uporabiti z
 ukazom _Wrap with Abbreviation_.
-Ko ste pripravili kurzorje, uporabite bližnjico za paleto dokazov in nadaljujete enako,
+Ko ste pripravili kurzorje, uporabite bližnjico za paleto ukazov in nadaljujete enako,
 kot pri enem samem kurzorju.
 
  1. Datoteko odprite v brskalniku, da vidite, kako izgleda.
