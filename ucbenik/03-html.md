@@ -1,6 +1,6 @@
 # Označevalni jezik HTML
 
-HTML (angl. _**H**yper**T**ext **M**arkup **L**anguage** _, jezik za označevanje hiperteksta oz. nadbesedila), 
+HTML (angl. _**H**yper**T**ext **M**arkup **L**anguage**_, jezik za označevanje hiperteksta oz. nadbesedila), 
 je osnovni jezik za ustvarjanje spletnih strani in spletnih aplikacij.
 Spletnim brskalnikom, kot so Google Chrome, Firefox, Edge ali Safari, pove, kako naj prikažejo vsebino spletne strani.
 To naredi z označevanjem gradnikov, kot so naslovi, odstavki, slike, povezave, tabele in obrazci.
@@ -45,7 +45,7 @@ ki se bo prikazalo v brskalniku.
 
 Značke lahko gnezdimo eno v drugo: `<a href="http://fmf.uni-lj.si/"><em>FMF</em></a>`.
 Značke se ne smejo prekrivati.
-Če pogledamo dve znački, je bodisi ena v vsebini druge, bodisi se sploh ne prekrivata.
+Če pogledamo dve znački, je bodisi ena v vsebini druge bodisi se sploh ne prekrivata.
 Narobe je npr. `<a href="http://fmf.uni-lj.si/"><em>FMF</a></em>`.
 Predstavljate si lahko, da so značke škatle, ki držijo vsebino.
 
