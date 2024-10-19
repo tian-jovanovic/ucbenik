@@ -158,9 +158,9 @@ Sledite navodilom za [nastavitve `git`-a](git:nastavitve).
 2. V ukazni vrstici se premaknite v ta repozitorij.
 3. Kopirajte naslov vašega repozitorija z GitHub-a: 
     - odprite stran z vašim repozitorijem v brskalniku, kliknite na puščico na zelenem gumbu Code,
-    - izberite zavihek Local, pod njim pa zavihek SSH
+    - izberite zavihek Local, pod njim pa zavihek SSH,
     - kopirajte naslov, ki izgleda takole nekako:
-      `git@github.com:⟨moje-uporabnisko-ime⟩/⟨moj-repozitorij⟩.git`
+      `git@github.com:⟨moje-uporabnisko-ime⟩/⟨moj-repozitorij⟩.git`.
 4. V ukazni vrstici napišite ukaz
    ```shell
    git clone ⟨naslov-iz-zgornje-tocke⟩
