@@ -13,7 +13,7 @@ Priporočamo se za pripombe in popravke (ki jih predlagajte na Discordu, na foru
 (namestitev:ukazna)=
 ## Orodja za ukazno vrstico
 
-Sledite navodilom za vaš operacijski sistem, nato pa še [navodilom za nastavitve za `git`](faq:git-nastavitve).
+Sledite navodilom za vaš operacijski sistem, nato pa še [navodilom za nastavitve za `git`](git:nastavitve).
 
 ### Navodila za operacijski sistem Windows
 
