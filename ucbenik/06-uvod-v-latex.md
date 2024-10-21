@@ -23,7 +23,11 @@ ki požene `pdflatex` in nekatere druge programe v sklopu sistema LaTeX.
 LaTeX dokumente oblikujemo z _ukazi_ (angl. _command_) in _okolji_ (angl. _environment_), 
 kot pri HTML pa lahko uporabljamo tudi _komentarje_.
 Ukazom včasih rečemo tudi makroji (angl. _macro_).
+Kot do sedaj, bo v primerih v kotnih oklepajih, takole: `⟨nadomesti-me⟩`.
+Ustrezno zamenjajte oklepaje in njihovo vsebino.
+
 ```tex
+% Vse, kar sledi znaku %, je komentar in LaTeX ignorira.
 % Okolja so podobna značkam:
 \begin{⟨ime-okolja⟩} % začetek okolja
   ⟨vsebina⟩          % vsebina
@@ -32,6 +36,17 @@ Ukazom včasih rečemo tudi makroji (angl. _macro_).
 % Ukazi so bolj enostavni:
 \⟨ime-ukaza⟩
 ```
+
+Najprej boste srečali ukaz `documentclass` in okolje `document`:
+
+```tex
+\documentclass{article}
+
+\begin{document} % začetek okolja document
+  Vsebina dokumenta
+\end{document}   % konec okolja document
+```
+
 Nekateri ukazi in okolja sprejmejo tudi dodatne argumente,
 ki so lahko obvezni (v zavitih oklepajih `{}`) ali neobvezni (v oglatih oklepajih `[]`).
 
