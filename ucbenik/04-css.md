@@ -10,7 +10,7 @@ Po tem načelu se vizualni in oblikovni vidiki (predstavitev in slog) ločijo od
 Različni brskalniki imajo različne načine za prikazovanje nekaterih elementov spletnih strani.
 Zato skoraj vse spletne strani najprej uporabijo CSS, ki poenoti prikazovanje elementov.
 Take CSS datoteke skoraj nihče ne naredi od začetka, ampak se uporabi eno od že obstoječih, kar bomo naredili tudi mi.
-V resnici se ponavadi uporabi kar enego od obstoječih ogrodij za izdelavo spletnih strani (npr. Bootstrap).
+V resnici se ponavadi uporabi kar enega od obstoječih ogrodij za izdelavo spletnih strani (npr. Bootstrap).
 
 `````{admonition} Programska oprema
 :class: important
